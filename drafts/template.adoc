@@ -1,0 +1,14 @@
+---
+layout: post
+title: "Title"
+categories: blog
+author_picture: https://avatars0.githubusercontent.com/u/3623618
+author_github: https://github.com/alohr51
+seo-title: Title - Kabanero.io
+seo-description: Summary of about 60 words.
+blog_description: "Same summary"
+---
+= Title
+Andrew Lohr <https://github.com/alohr51>
+
+Text starts here...
