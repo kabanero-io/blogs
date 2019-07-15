@@ -29,7 +29,7 @@ https://kabanero.io[Kabanero] takes the guess work out of Kubernetes and DevOps.
 
 https://appsody.dev[Appsody] is an open source project that simplifies the creation of cloud-native applications in containers. With Appsody, a developer can create a microservice which meets their organization's standards and requirements in minutes.
 
-Appsody gives you pre-configured stacks and templates for a growing set of popular open source runtimes and frameworks, providing a foundation on which to build applications for Kubernetes and Knative deployments. This allows developers to focus on their code, reducing the learning curve for cloud-native developmentand enabling rapid development for these cloud-native applications.
+Appsody gives you pre-configured stacks and templates for a growing set of popular open source runtimes and frameworks, providing a foundation on which to build applications for Kubernetes and Knative deployments. This allows developers to focus on their code, reducing the learning curve for cloud-native development and enabling rapid development for these cloud-native applications.
 
 You can customize Appsody stacks to meet your specific development requirements and to control and configure the included technologies. If you customize a stack, you have a single point of control from which you can roll out those changes to all applications built from them. 
  
@@ -60,4 +60,4 @@ Check out each project’s GitHub repo to learn more, try them out, and get invo
 - https://github.com/kabanero-io[Kabanero GitHub repo]
 - https://github.com/appsody[Appsody GitHub repo]
 - https://github.com/eclipse/codewind[Codewind GitHub repo]
-- https://github.com/razee-io/[RazeeGitHub repo]
+- https://github.com/razee-io/[Razee GitHub repo]
