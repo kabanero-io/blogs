@@ -6,7 +6,7 @@ author_picture: https://avatars1.githubusercontent.com/u/28736793?s=400&v=4
 author_github: https://github.com/nateziemann
 seo-title: Title - Kabanero.io
 seo-description: Choosing the right technology for building cloud-native apps and gaining the knowledge you need to effectively adopt Kubernetes, this Blog describes an effective solution to onboard quickly and rapidly deploy applications.
-blog_description: "Same summary"
+blog_description: "Choosing the right technology for building cloud-native apps and gaining the knowledge you need to effectively adopt Kubernetes, this Blog describes an effective solution to onboard quickly and rapidly deploy applications."
 ---
 = Build cloud-native apps faster for Kubernetes with Kabanero, a new open source project from IBM
 Nathan Ziemann <https://github.com/nateziemann>
