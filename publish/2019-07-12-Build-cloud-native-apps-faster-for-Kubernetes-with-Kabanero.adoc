@@ -1,63 +1,29 @@
 ---
 layout: post
-title: "Build cloud-native apps faster for Kubernetes with Kabanero, a new open source project from IBM"
+title: "What’s Hot this week?"
 categories: blog
 author_picture: https://avatars1.githubusercontent.com/u/28736793?s=400&v=4
 author_github: https://github.com/nateziemann
 seo-title: Title - Kabanero.io
-seo-description: Choosing the right technology for building cloud-native apps and gaining the knowledge you need to effectively adopt Kubernetes, this Blog describes an effective solution to onboard quickly and rapidly deploy applications.
-blog_description: "Choosing the right technology for building cloud-native apps and gaining the knowledge you need to effectively adopt Kubernetes, this Blog describes an effective solution to onboard quickly and rapidly deploy applications."
+seo-description: This week we’re really looking to heat up app development for Kubernetes.  Check out new announcements, ways to engage with us and get hands-on.
+blog_description: "This week we’re really looking to heat up app development for Kubernetes.  Check out new announcements, ways to engage with us and get hands-on."
 ---
-= Build cloud-native apps faster for Kubernetes with Kabanero, a new open source project from IBM
+= What’s Hot this week?
 Nathan Ziemann <https://github.com/nateziemann>
 
-As companies modernize their infrastructure and adopt a hybrid cloud strategy, they’re increasingly turning to Kubernetes and containers. Choosing the right technology for building cloud-native apps and gaining the knowledge you need to effectively adopt Kubernetes is difficult. On top of that, enabling architects, developers, and operations to work together easily, while having their individual requirements met, is an additional challenge when moving to cloud.
+This week we’re really looking to heat up app development for Kubernetes.  Check out new announcements, ways to engage with us and get hands-on. 
 
-To lower the barrier of entry for developers to use Kubernetes and to bring together different disciplines, IBM created new open source projects that make it faster and easier for you to develop and deploy applications for Kubernetes.
-
-Today at OSCON 2019, we are excited to announce the creation of three new open source projects https://kabanero.io[Kabanero], https://appsody.dev[Appsody], and https://codewind.dev[Codewind] that developers can use to build cloud-native apps faster for Kubernetes. 
-
-== Kabanero: Create Kubernetes applications with the skills you have 
-
-Kabanero enables developers, architects, and operations to work together, faster. In a single solution, architects and operations can include their company’s standards for aspects like security and build pipelines into a customized stack that developers use. Kabanero gives enterprises the control they need for areas related to governance and compliance, while also meeting the developers’ need for agility and speed.
-
-Kabanero brings together open source projects Knative, Istio, and Tekton, with new open projects Codewind, Appsody, and Razee into an end-to-end solution for you to architect, build, deploy, and manage the lifecycle of Kubernetes-based applications. 
-
-https://kabanero.io[Kabanero] takes the guess work out of Kubernetes and DevOps. With Kabanero, you don’t need to spend time mastering DevOps practices and Kubernetes infrastructure topics like networking, ingress, and security. Instead, Kabanero integrates the runtimes and frameworks that you already know and use (Node.js, Java, Swift) with a Kubernetes-native DevOps toolchain. Our pre-built deployments to Kubernetes and Knative (using Operators and Helm charts) are built on best practices. So, developers can spend more time developing scalable applications and less time understanding infrastructure.
-
-== Appsody: Cloud-native application stacks and tools
-
-https://appsody.dev[Appsody] is an open source project that simplifies the creation of cloud-native applications in containers. With Appsody, a developer can create a microservice which meets their organization's standards and requirements in minutes.
-
-Appsody gives you pre-configured stacks and templates for a growing set of popular open source runtimes and frameworks, providing a foundation on which to build applications for Kubernetes and Knative deployments. This allows developers to focus on their code, reducing the learning curve for cloud-native development and enabling rapid development for these cloud-native applications.
-
-You can customize Appsody stacks to meet your specific development requirements and to control and configure the included technologies. If you customize a stack, you have a single point of control from which you can roll out those changes to all applications built from them. 
+ 1. Today we are announcing more details about Kabanero and our Kabanero Developer Experience with new open source projects from Eclipse Foundation and IBM.  Check out https://developer.ibm.com/blogs/cloud-native-apps-kubernetes-kabanero/[this latest blog] on IBM Developer with all the details!! Build cloud-native apps faster for Kubernetes with Kabanero. 
  
-Kabanero incorporates Appsody stacks and templates into its overarching framework.
+ 2. We’re introducing “Try it” experiences. Our first is the Kabanero Developer Experience, focused on the developer persona and local dev.  Check out how to get hands-on at https://kabanero.io/try-it.   In under 5 minutes you can go from zero to application running in an existing Knative/Kubernetes cluster.  Watch the new youtube demo and try-it for yourself.
+ 
+ 3. We will be at O’Reilly OSCON this week in Portland talking about Kabanero and our Kabanero Development Experience with Eclipse Codewind and Appsody.  If you’re at the conference, stop by the IBM Booth and check us out.  We’d love to hear from you.  We’ll have technical experts ready to share, demo and listen to your feedback.  <link to use above>https://conferences.oreilly.com/oscon/oscon-or
 
-== Codewind: IDE integration for cloud-native development
+In addition, check out our GitHub repos. https://github.com/kabanero-io If you want to collaborate with developers, get involved, that’s the place to start.
 
-IBM made the first major contribution to Codewind, a new open source project managed by the Eclipse Foundation.
 
-https://codewind.dev[Codewind] provides extensions to popular integrated development environments (IDEs) like VS Code, Eclipse, and Eclipse Che (with more planned), so you can use the workflow and IDE you already know to build applications in containers. Essentially, Codewind enables you to develop in containers without knowing you are developing in containers.
+== Stay tuned, we’re just getting started.
 
-With Codewind, you can rapidly iterate, debug, and performance test apps inside containers, just like when they run in production. Codewind supports multiple project template types and embraces a community of choices. Kabanero and Appsody will use Codewind to provide an integrated IDE experience.
+We plan to share first guides and another “Try it” experience, first featured collections, and more details about each open source project integrated as part of Kabanero.  
 
-== Razee: Multi-cluster continuous delivery tooling for Kubernetes
 
-In addition, we recently announced https://www.ibm.com/cloud/blog/announcing-razee[Razee], which provides multi-cluster continuous delivery tooling for Kubernetes. This project focuses on management of Kubernetes at scale and will be another open source technology Kabanero will use for progression of applications from development, test, and production clusters.
-
-== Why Kabanero? 
-
-There is nothing like Kabanero in the market today.  While there are open source projects that address individual aspects of what Kabanero addresses, no other open source project provides an integrated experience from the creation of a containerized cloud-native application through its production lifecycle on Kubernetes.
-
-By using Kabanero, your development team can build applications that are ready to be deployed on to Kubernetes without first becoming experts in containers and Kubernetes. This lowers the barrier of entry for developers as their organization moves from legacy infrastructure to more modern infrastructure on their journey to cloud.
-
-== Get involved
-
-Check out each project’s GitHub repo to learn more, try them out, and get involved in their communities. We’d love to work with you to make it easier to build and scale containerized applications.
-
-- https://github.com/kabanero-io[Kabanero GitHub repo]
-- https://github.com/appsody[Appsody GitHub repo]
-- https://github.com/eclipse/codewind[Codewind GitHub repo]
-- https://github.com/razee-io/[Razee GitHub repo]
