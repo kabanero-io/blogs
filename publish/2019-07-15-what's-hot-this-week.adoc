@@ -4,7 +4,7 @@ title: "What’s Hot this week?"
 categories: blog
 author_picture: https://avatars1.githubusercontent.com/u/28736793?s=400&v=4
 author_github: https://github.com/nateziemann
-seo-title: Title - Kabanero.io
+seo-title: Kabanero.io - What's Hot this week?
 seo-description: This week we’re really looking to heat up app development for Kubernetes.  Check out new announcements, ways to engage with us and get hands-on.
 blog_description: "This week we’re really looking to heat up app development for Kubernetes.  Check out new announcements, ways to engage with us and get hands-on."
 ---
