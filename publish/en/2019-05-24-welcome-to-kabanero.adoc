@@ -9,6 +9,8 @@ seo-title: Bienvenido a Kabanero
 seo-description: Kabanero es un proyecto de código abierto que se centra en reunir varias tecnologías fundamentales de código abierto de formas bien diseñadas ...
 
 blog_description: "Kabanero es un proyecto de código abierto que se centra en reunir varias tecnologías fundamentales de código abierto de formas bien diseñadas ..."
+
+language: en
 ---
 = Bienvenido a Kabanero, donde a algunos les gusta el calor
 Alan Little <https://github.com/Kabanero-io>
