@@ -4,9 +4,9 @@ title: "Qué está de moda esta semana?"
 categories: blog
 author_picture: https://avatars1.githubusercontent.com/u/28736793?s=400&v=4
 author_github: https://github.com/nateziemann
-seo-title: Kabanero.io - ¿Qué está de moda esta semana?
-seo-description: Esta semana realmente estamos buscando calentar el desarrollo de aplicaciones para Kubernetes. Vea nuevos anuncios, formas de relacionarse con nosotros y ponerse en práctica.
-blog_description: "Esta semana realmente estamos buscando calentar el desarrollo de aplicaciones para Kubernetes. Echa un vistazo a los nuevos anuncios, formas de interactuar con nosotros y ponerte en práctica".
+seo-title: Kabanero.io - Qué está de moda esta semana?
+seo-description: "Esta semana realmente estamos buscando calentar el desarrollo de aplicaciones para Kubernetes. Vea nuevos anuncios, formas de relacionarse con nosotros y ponerse en práctica."
+
 
 language: es
 ---
@@ -24,7 +24,7 @@ Esta semana realmente estamos buscando calentar el desarrollo de aplicaciones pa
 Además, echa un vistazo a nuestros repositorios de GitHub. https://github.com/kabanero-io Si quieres colaborar con desarrolladores, participa, ese es el lugar para comenzar.
 
 
-u003du003d Estén atentos, apenas estamos comenzando.
+== Estén atentos, apenas estamos comenzando.
 
 Planeamos compartir las primeras guías y otra experiencia de "Pruébalo", las primeras colecciones destacadas y más detalles sobre cada proyecto de código abierto integrado como parte de Kabanero.
 
