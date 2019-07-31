@@ -1,0 +1,68 @@
+---
+layout: post
+title: "Bienvenido a Kabanero - Donde a algunos les gusta"
+categories: blog
+author_picture: https://avatars2.githubusercontent.com/u/50369766
+author_github: https://github.com/Kabanero-io
+seo-title: Bienvenido a Kabanero
+
+seo-description: Kabanero es un proyecto de código abierto que se centra en reunir varias tecnologías fundamentales de código abierto de formas bien diseñadas ...
+
+blog_description: "Kabanero es un proyecto de código abierto que se centra en reunir varias tecnologías fundamentales de código abierto de formas bien diseñadas ..."
+---
+= Bienvenido a Kabanero, donde a algunos les gusta el calor
+Alan Little <https://github.com/Kabanero-io>
+
+Bienvenido al proyecto de código abierto Kabanero, donde nuestro objetivo es agregar un sabor serio a la experiencia de crear aplicaciones en Kubernetes. Nuestro proyecto se centra en simplificar la tarea de arquitectura, desarrollo, implementación y administración de aplicaciones nativas de la nube, utilizando pilas de aplicaciones personalizadas y herramientas estrechamente integradas que funcionan en armonía con el código abierto.
+
+Kabanero reúne tecnologías fundamentales de código abierto en un marco moderno basado en microservicios para crear aplicaciones en Kubernetes. La cantidad de tecnologías de código abierto que las empresas tienen hoy para ofrecer funciones de TI es abrumadora. Kabanero reduce las opciones complejas, pero conserva la flexibilidad. Kabanero permite a los arquitectos diseñar y definir, a los desarrolladores escribir código más rápido y con confianza, y a los operadores administrar de manera eficiente.
+
+La industria ha convergido en dos principios clave que Kabanero adopta:
+
+* Construir aplicaciones en contenedores con middleware en contenedores es imprescindible.
+* Kubernetes es el entorno de orquestación de contenedores subyacente para nuevas aplicaciones.
+
+El equipo de Kabanero realizó un diseño basado en la persona pensando en las necesidades de los roles involucrados. Probamos nuestra hipótesis de estas sesiones de pensamiento de diseño con usuarios de empresas que están en un viaje para mudarse a la nube. Lo que encontramos como el estado actual no cumple con los resultados deseados de estos clientes, y nuestros futuros estados propuestos mejoraron drásticamente los problemas que estaban enfrentando con las responsabilidades cambiantes entre las personas. Esto los llevó a creer que Kabanero ayudará a los equipos a crear software más rápido, que está listo para la implementación en la nube, y se ajusta a la forma en que las organizaciones están estructuradas hoy y los lleva a una forma más eficiente de entregar código.
+
+
+Hoy encontramos tres personas en todas las organizaciones para las que Kabanero está diseñado: Champ, Jane y Todd.
+
+Champ "The architect" (Empresa, solución o aplicación)
+
+Champ es responsable de garantizar que la arquitectura general de su empresa se mantenga unida y que las aplicaciones comerciales se rijan para cumplir con las regulaciones de la empresa y la industria. Está buscando consistencia y flexibilidad aplicada a los idiomas, tiempos de ejecución y herramientas elegidos. Esto reduce los costos de capacitación y permite a los desarrolladores moverse entre proyectos. Champ busca proporcionar a Jane y Todd una pequeña cantidad de pilas de aplicaciones que les permitan construir y administrar aplicaciones de manera eficiente. Quiere hacer avanzar el estado de las aplicaciones de la empresa y modernizar la importante inversión que él y sus predecesores han realizado en nombre de la empresa.
+
+Jane "El desarrollador Java establecido"
+
+Jane es experta en el desarrollo de aplicaciones Java, Java EE y Spring para servidores de aplicaciones tradicionales. Jane está interesada en aprender nuevos lenguajes y marcos para explotar todo el potencial de las aplicaciones y servicios nativos de la nube. Su función requiere que se concentre en la lógica de la aplicación, la lógica de negocios y la infraestructura subyacente. Está constantemente bajo presión para entregar el código a un ritmo más rápido y con mayor calidad. El objetivo de Champ es proporcionarle a Jane sus paquetes de aplicaciones aprobados para permitir Jane para desarrollar aplicaciones para Kubernetes.
+
+Todd "El operador"
+
+Todd es responsable de operar la plataforma Kubernetes y las aplicaciones producidas por Jane. Su enfoque está en adaptar un conjunto de tuberías de automatización para garantizar que las aplicaciones satisfagan sus necesidades para ejecutar los sistemas de los que es responsable. Todd también es responsable de monitorear los sistemas y garantizar que pueda cumplir con los requisitos de disponibilidad establecidos por su empresa o la línea de negocios. Todd asegura una transición sin problemas entre el equipo de desarrollo y la entrega del código a la producción mediante el uso de un conjunto de estándares y automatización para mantener el cumplimiento continuo.
+
+== En qué estamos enfocados actualmente ...
+
+Un concepto central de Kabanero es una pila de aplicaciones. Una pila de aplicaciones define los tiempos de ejecución y los marcos que utilizará Jane para desarrollar las aplicaciones. También incluye material educativo, muestras y documentación que puede usar para aprender a construir estas aplicaciones. Esto está impregnado de experiencia para implementar en Kubernetes, incluida la seguridad, la escala, la salud y la vitalidad. La pila de aplicaciones es la entidad que Todd instala y selecciona Champ antes de compartirla con Jane.
+
+
+Las pilas de aplicaciones incluirán tanto plantillas para la aplicación de Jane como imágenes de contenedor base certificadas que proporcionan un tiempo de ejecución (y mucho más) para el código de Jane. Champ es responsable de seleccionar sus paquetes de aplicaciones aprobados localmente en un Application Hub. Estaremos escribiendo más sobre esto en una próxima publicación de blog.
+
+
+Para desarrollar mejor las aplicaciones en contenedores para Kubernetes desde el primer día, hemos elegido Eclipse Codewind, que proporciona extensiones a IDE de desarrolladores populares, incluidos VS Code, Eclipse y Eclipse Che para equipos que trabajan en un entorno de desarrollo alojado. Jane puede construir aplicaciones nuevas o modernizar aplicaciones existentes, utilizando sus herramientas preferidas. El desarrollo del bucle interno ocurre dentro de un contenedor, desde el principio, lo que hace que a Jane le resulte más fácil confiar en su código cuando se registra. Jane puede verificar su código en Git, donde comienza la siguiente fase del proceso.
+
+
+Al marcar el código en Git, se inicia un webhook; este webhook hace que se inicie una canalización de CI / CD; todo esto es parte del ciclo de vida de la aplicación integrada y automatizada que proporciona Kabanero. De manera predeterminada, utilizamos las tuberías de Tekton para administrar el ciclo de vida de la implementación. Tekton es un proyecto de código abierto nativo de Kubernetes para crear canalizaciones de CI / CD, que se originó a partir del proyecto Knative. Se discutirán más detalles en un blog posterior, que incluye cómo conectar otras opciones de CI / CD.
+
+
+La pila de aplicaciones utilizada por Jane, que fue creada por Champ, hace que el contenedor se construya de la manera prescrita por el Grupo de Interés Especial de Kubernetes para aplicaciones. Esto permite que un componente de Kabanero llamado Application Navigator proporcione una vista de administración a todas las partes de una aplicación. Permite que Todd y Jane visualicen y administren grupos de contenedores que trabajan juntos.
+
+== Estén atentos, recién estamos comenzando
+
+A medida que avance el proyecto, nos verá construyendo al aire libre. Presentaremos muchos más temas para cada una de nuestras personas clave. Aquí hay algunos temas que están por venir:
+
+* Guías educativas y muestras
+* Tiempos de ejecución e idiomas que pueden usarse para crear aplicaciones
+* Detalles sobre Application Hub y flujos de trabajo para que Champ lo administre
+* Cómo se validan las aplicaciones por seguridad
+* Cómo se integran y gestionan las API en el flujo
+
+Sigue revisando con nosotros. Verá que el sitio cobra vida con guías, códigos y blogs adicionales. Mientras tanto, síganos en Twitter, o únase a nuestro canal slack para decirnos qué piensa o quiere ver más.
