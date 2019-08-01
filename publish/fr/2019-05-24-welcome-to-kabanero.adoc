@@ -1,0 +1,70 @@
+---
+layout: post
+title: "Bienvenue à Kabanero - Certains aiment ça"
+categories: blog
+author_picture: https://avatars2.githubusercontent.com/u/50369766
+author_github: https://github.com/Kabanero-io
+seo-title: Bienvenue à Kabanero
+
+seo-description: Kabanero est un projet open source visant à rassembler plusieurs technologies open source fondamentales de manière bien architecturée ...
+
+blog_description: "Kabanero est un projet open source visant à rassembler plusieurs technologies Open Source fondamentales de manière bien structurée ..."
+
+language: fr
+---
+= Bienvenue à Kabanero - où certains l'aiment chaud
+Alan Little <https://github.com/Kabanero-io>
+
+Bienvenue dans le projet open source Kabanero, où notre objectif est d'ajouter une saveur sérieuse à l'expérience de la création d'applications sur Kubernetes. Notre projet vise à simplifier la tâche de l’architecture, du développement, du déploiement et de la gestion des applications en nuage, à l’aide de piles d’applications personnalisées et d’un outillage étroitement intégré qui fonctionne en harmonie avec l’open source.
+
+Kabanero regroupe les technologies Open Source fondamentales dans un cadre moderne basé sur des microservices pour la création d'applications sur Kubernetes. Le nombre de technologies open source disponibles aujourd'hui dans les entreprises pour la fourniture de fonctions informatiques est écrasant. Kabanero réduit les choix complexes, tout en conservant la flexibilité. Kabanero permet aux architectes de concevoir et de définir, aux développeurs d’écrire du code plus rapidement et en toute confiance, et aux opérateurs de gérer efficacement.
+
+L’industrie a convergé sur deux principes clés auxquels adhère Kabanero:
+
+* La construction d'applications conteneurisées avec un middleware conteneurisé est un must.
+* Kubernetes est l'environnement d'orchestration de conteneur sous-jacent pour les nouvelles applications.
+
+L’équipe Kabanero a mené une réflexion de conception basée sur les personnalités sur les besoins des rôles en question. Nous avons testé notre hypothèse lors de ces séances de conception avec des utilisateurs d’entreprises en passe de passer au cloud. Ce que nous avons constaté en l'état ne correspond pas aux résultats souhaités par nos clients, et les futurs États que nous avons proposés ont considérablement amélioré les problèmes qu'ils rencontraient avec des responsabilités changeantes entre les personnalités. Cela les a amenés à croire que Kabanero aidera les équipes à concevoir des logiciels plus rapidement, qu’elles sont prêtes pour le déploiement dans le cloud et qu’elles s’harmonisent avec la structure actuelle des organisations et qu’elles les orientent vers un moyen plus efficace de fournir du code.
+
+
+Aujourd'hui, Kabanero est conçu pour trois personnalités: Champ, Jane et Todd.
+
+Champ "L'architecte" (entreprise, solution ou application)
+
+Champ est responsable de la cohérence de l'architecture globale de son entreprise et de la régularité des applications métiers. Il recherche la cohérence et la flexibilité appliquées aux langues, aux temps d'exécution et aux outils de son choix. Cela réduit les coûts de formation et permet aux développeurs de passer d'un projet à l'autre. Champ cherche à fournir à Jane et Todd un petit nombre de piles d’applications leur permettant de créer et de gérer efficacement des applications. Il souhaite faire progresser la succession d'applications de la société et moderniser l'important investissement que lui et ses prédécesseurs ont fait pour le compte de la société.
+
+Jane "Le développeur Java établi"
+
+Jane est spécialisée dans le développement d'applications Java, Java EE et Spring pour les serveurs d'applications traditionnels. Jane souhaite apprendre de nouveaux langages et frameworks pour exploiter tout le potentiel des applications et des services en nuage. Son rôle l'oblige à se concentrer sur la logique d'application, la logique métier et l'infrastructure sous-jacente. Elle est constamment sous pression pour fournir du code à un rythme plus rapide et avec une qualité supérieure. L'objectif de Champ est de fournir à Jane ses piles d'applications approuvées pour lui permettre de développer des applications pour Kubernetes.
+
+Todd "L'opérateur"
+
+Todd est responsable de l’exploitation de la plate-forme Kubernetes et des applications produites par Jane. Son objectif est de personnaliser un ensemble de pipelines d'automatisation afin de garantir que les applications répondent à ses besoins pour faire fonctionner les systèmes dont il est responsable. Todd est également chargé de surveiller les systèmes et de s’assurer qu’il peut satisfaire aux exigences de disponibilité définies par son entreprise ou son secteur d’activité. Todd assure une transition en douceur entre l'équipe de développement et la livraison du code en production en utilisant un ensemble de normes et d'automatisation pour maintenir une conformité continue.
+
+== Ce sur quoi nous nous concentrons actuellement ...
+
+Un concept central de Kabanero est une pile d'applications. Une pile d'applications définit les environnements d'exécution et les infrastructures que Jane utilisera pour développer les applications. Il comprend également du matériel pédagogique, des exemples et de la documentation qu'elle peut utiliser pour apprendre à créer ces applications. Ceci est infusé avec une expertise pour le déploiement sur Kubernetes, notamment en matière de sécurité, d’échelle, de santé et de dynamisme. La pile d'applications est l'entité que Todd installe et que Champ prépare avant de la partager avec Jane.
+
+
+Les piles d’applications incluront à la fois des modèles pour l’application de Jane et des images de conteneur de base certifiées qui fournissent une exécution (et bien plus encore) pour le code de Jane. Champ est responsable de la gestion de ses piles d'applications approuvées localement dans un hub d'applications. Nous écrirons plus à ce sujet dans un prochain article de blog.
+
+
+Pour mieux développer les applications dans les conteneurs de Kubernetes dès le premier jour, nous avons choisi Eclipse Codewind, qui fournit des extensions aux IDE de développeurs les plus populaires, notamment VS Code, Eclipse et Eclipse Che, pour les équipes travaillant dans un environnement de développement hébergé. Jane peut créer à la fois de nouvelles applications ou moderniser des applications existantes en utilisant ses outils préférés. Le développement de la boucle interne a lieu dès le début dans un conteneur, ce qui permet à Jane d’être plus confiante quant à son code lorsqu’elle est enregistrée. Jane peut ensuite archiver son code dans Git, où commence la prochaine phase du processus.
+
+
+En vérifiant le code dans Git, un webhook est lancé; Ce webhook provoque le démarrage d'un pipeline CI / CD. Tout cela fait partie du cycle de vie intégré et automatisé des applications fourni par Kabanero. Par défaut, nous utilisons les pipelines Tekton pour gérer le cycle de vie du déploiement. Tekton est un projet open source natif de Kubernetes pour la création de pipelines CI / CD, issu du projet Knative. Plus de détails seront discutés dans un prochain blog, y compris comment brancher d'autres options CI / CD.
+
+
+La pile d'applications utilisée par Jane, qui a été configurée par Champ, entraîne la construction du conteneur selon les instructions du groupe d'intérêt spécial Kubernetes pour les applications. Cela permet à un composant de Kabanero appelé Application Navigator de fournir une vue de gestion à tous les éléments d’une application. Il permet aux groupes de conteneurs qui travaillent ensemble d'être visualisés et gérés ensemble par Todd et Jane.
+
+== Restez à l'écoute, nous ne faisons que commencer
+
+Au fur et à mesure que le projet avance, vous nous verrez construire à l'air libre. Nous allons introduire beaucoup plus de sujets pour chacun de nos personnages clés. Voici quelques sujets à venir:
+
+* Guides pédagogiques et échantillons
+* Temps d'exécution et langages pouvant être utilisés pour créer des applications
+* Détails sur le hub d'applications et les flux de travail permettant à Champ de le gérer.
+* Comment les applications sont validées pour la sécurité
+* Comment les API sont intégrées dans le flux et gérées
+
+Continuez à vérifier avec nous. Vous verrez le site s'animer avec des guides, du code et des blogs supplémentaires. En attendant, suivez-nous sur Twitter ou rejoignez notre chaîne slack pour nous dire ce que vous pensez ou souhaitez en voir plus!

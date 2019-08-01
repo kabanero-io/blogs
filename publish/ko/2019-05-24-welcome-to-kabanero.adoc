@@ -1,9 +1,9 @@
 ---
 layout: post
-title : "Kabanero에 오신 것을 환영합니다."
+title : "Kabanero에 오신 것을 환영합니다.
 categories: blog
-author_picture: https://avatars2.githubusercontent.com/u/50369766
-author_github: https://github.com/Kabanero-io
+author_picture : https://avatars2.githubusercontent.com/u/50369766
+author_github : https://github.com/Kabanero-io
 seo-title : 카바 네로에 오신 것을 환영합니다.
 
 seo-description : Kabanero는 잘 짜여진 방식으로 여러 가지 기초적인 오픈 소스 기술을 결합하는 데 초점을 맞춘 오픈 소스 프로젝트입니다.

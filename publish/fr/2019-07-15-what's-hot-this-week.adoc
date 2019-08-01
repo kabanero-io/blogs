@@ -1,0 +1,31 @@
+---
+layout: post
+title: "Qu'est-ce qui est chaud cette semaine?"
+categories: blog
+author_picture: https://avatars1.githubusercontent.com/u/28736793?su003d400&vu003d4
+author_github: https://github.com/nateziemann
+seo-title: Kabanero.io - Qu'est-ce qui est chaud cette semaine?
+seo-description: Cette semaine, nous cherchons vraiment à faire chauffer le développement d'applications pour Kubernetes. Découvrez les nouvelles annonces, les moyens de dialoguer avec nous et de participer activement.
+blog_description: "Cette semaine, nous cherchons vraiment à donner un coup de fouet au développement d’applications pour Kubernetes. Découvrez les nouvelles annonces, les moyens de dialoguer avec nous et de vous impliquer directement."
+
+language: fr
+---
+= Qu'est-ce qui est chaud cette semaine?
+Nathan Ziemann <https://github.com/nateziemann>
+
+Cette semaine, nous cherchons vraiment à réchauffer le développement d'applications pour Kubernetes. Découvrez les nouvelles annonces, les moyens de dialoguer avec nous et de participer activement.
+
+1. Aujourd'hui, nous annonçons plus de détails sur Kabanero et notre expérience de développeur Kabanero avec de nouveaux projets open source de la fondation Eclipse et d'IBM. Découvrez ce dernier blog sur IBM Developer avec tous les détails !! https://developer.ibm.com/blogs/cloud-native-apps-kubernetes-kabanero/[Build des applications cloud natives plus rapidement pour Kubernetes avec Kabanero.]
+
+2. Nous introduisons des expériences «Essayez-le». Notre première expérience est l’expérience de développement Kabanero, centrée sur le développeur et le développeur local. Découvrez comment vous rendre sur le site https://kabanero.io/try-it. En moins de 5 minutes, vous pouvez passer de zéro à l'application s'exécutant dans un cluster Knative / Kubernetes existant. Regardez la nouvelle démo YouTube et essayez-la vous-même.
+
+3. Nous nous rendrons cette semaine à Portland à l'adresse https://conferences.oreilly.com/oscon/oscon-or[O’Reilly OSCON] pour parler de Kabanero et de notre expérience de développement Kabanero avec Eclipse Codewind et Appsody. Si vous êtes à la conférence, arrêtez-vous au stand IBM et consultez-nous. Nous aimerions recevoir de vos nouvelles. Nous aurons des experts techniques prêts à partager, démo et écouter vos commentaires.
+
+En outre, consultez nos pensions GitHub. https://github.com/kabanero-io Si vous souhaitez collaborer avec des développeurs, impliquez-vous, c’est le bon endroit pour commencer.
+
+
+== Restez à l’écoute, nous ne faisons que commencer.
+
+Nous prévoyons de partager les premiers guides et une autre expérience «Essayez-le», les premières collections en vedette et plus de détails sur chaque projet open source intégré dans Kabanero.
+
+

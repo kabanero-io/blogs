@@ -1,0 +1,70 @@
+---
+layout: post
+title: "Benvenuti in Kabanero - Dove piace a qualcuno"
+categories: blog
+author_picture: https://avatars2.githubusercontent.com/u/50369766
+author_github: https://github.com/Kabanero-io
+seo-title: Benvenuti a Kabanero
+
+seo-description: Kabanero è un progetto open source che si concentra sul riunire diverse tecnologie open source di base in modi ben progettati ...
+
+blog_description: "Kabanero è un progetto open source che si concentra sul riunire diverse tecnologie open source di base in modi ben progettati ..."
+
+language: it
+---
+= Benvenuto in Kabanero - dove ad alcuni piace caldo
+Alan Little <https://github.com/Kabanero-io>
+
+Benvenuti nel progetto open source di Kabanero, in cui il nostro obiettivo è aggiungere un tocco serio all'esperienza di creazione di app su Kubernetes. Il nostro progetto è focalizzato sulla semplificazione del compito di progettare, sviluppare, distribuire e gestire app native per il cloud, usando stack di applicazioni su misura e strumenti strettamente integrati che funzionano in armonia con l'open source.
+
+Kabanero riunisce le tecnologie open source di base in un moderno framework basato su microservizi per la creazione di applicazioni su Kubernetes. Il numero di tecnologie open source che le aziende hanno oggi per fornire la funzione IT è travolgente. Kabanero riduce le scelte complesse, ma mantiene la flessibilità. Kabanero consente agli architetti di progettare e definire, agli sviluppatori di scrivere codice più velocemente con sicurezza e agli operatori di gestire in modo efficiente.
+
+L'industria è convergente su due principi chiave che Kabanero abbraccia:
+
+* È indispensabile creare applicazioni containerizzate con middleware containerizzato.
+* Kubernetes è l'ambiente di orchestrazione dei container sottostante per nuove applicazioni.
+
+Il team di Kabanero ha realizzato un design basato sulla persona pensando alle esigenze dei ruoli coinvolti. Abbiamo testato la nostra ipotesi da queste sessioni di pensiero progettuale con utenti di aziende che sono in viaggio per passare al Cloud. Quello che abbiamo trovato come stato così com'è non soddisfa i risultati desiderati da questi clienti e i nostri stati proposti sono drasticamente migliorati i problemi che stavano incontrando con lo spostamento delle responsabilità tra le persone. Ciò li ha portati a credere che Kabanero aiuterà i team a sviluppare software più velocemente, che è pronto per l'implementazione del cloud e si adatta al modo in cui le organizzazioni sono strutturate oggi e li porta a un modo più efficiente di fornire codice.
+
+
+Oggi troviamo tre persone nelle organizzazioni per le quali Kabanero è progettato: Champ, Jane e Todd.
+
+Champ "The Architect" (Enterprise, soluzione o applicazione)
+
+Champ è responsabile di assicurare che l'architettura complessiva della sua azienda sia unita e che le applicazioni aziendali siano regolate per soddisfare le normative aziendali e di settore. Sta cercando coerenza e flessibilità applicate alle lingue, ai tempi di esecuzione e agli strumenti scelti. Ciò riduce i costi di formazione e consente agli sviluppatori di spostarsi tra i progetti. Champ cerca di fornire a Jane e Todd un numero limitato di stack di applicazioni che consentano loro di creare e gestire in modo efficiente le applicazioni. Vuole far avanzare il patrimonio applicativo della società e modernizzare il significativo investimento che lui e i suoi predecessori hanno fatto per conto della società.
+
+Jane "Lo sviluppatore Java affermato"
+
+Jane è abile nello sviluppo di applicazioni Java, Java EE e Spring per server di applicazioni tradizionali. Jane è desiderosa di apprendere nuove lingue e framework per sfruttare tutto il potenziale delle applicazioni e dei servizi nativi del cloud. Il suo ruolo le impone di concentrarsi sulla logica dell'applicazione, sulla logica aziendale e sull'infrastruttura sottostante. È costantemente sotto pressione per fornire il codice a un ritmo più rapido e con una qualità superiore. L'obiettivo di Champ è fornire a Jane le sue pile di applicazioni approvate per consentire Jane per sviluppare applicazioni per Kubernetes.
+
+Todd "L'operatore"
+
+Todd è responsabile del funzionamento della piattaforma Kubernetes e delle applicazioni prodotte da Jane. Il suo obiettivo è quello di personalizzare una serie di condotte di automazione per garantire che le applicazioni soddisfino le sue esigenze per l'esecuzione dei sistemi di cui è responsabile. Todd è inoltre responsabile del monitoraggio dei sistemi e della garanzia di poter soddisfare i requisiti di disponibilità stabiliti dalla propria azienda o dalla propria area di attività. Todd garantisce una transizione graduale tra il team di sviluppo e la consegna del codice in produzione utilizzando una serie di standard e automazione per mantenere la conformità continua.
+
+== Su cosa ci stiamo concentrando attualmente ...
+
+Un concetto centrale di Kabanero è uno stack di applicazioni. Uno stack di applicazioni definisce i tempi di esecuzione e i framework che Jane utilizzerà per sviluppare le applicazioni. Include anche materiale didattico, campioni e documentazione che può utilizzare per imparare a creare queste applicazioni. Questo è infuso dall'esperienza per l'implementazione su Kubernetes tra cui sicurezza, dimensioni, salute e vivacità. Lo stack dell'applicazione è l'entità che Todd installa e Champ cura prima di condividerlo con Jane.
+
+
+Le pile di applicazioni includeranno sia modelli per l'applicazione di Jane sia immagini del contenitore di base certificate che forniscono un runtime (e molto altro) per il codice di Jane. Champ è responsabile della cura locale delle sue pile di applicazioni approvate in un Hub applicazioni. Scriveremo di più su questo in un prossimo post sul blog.
+
+
+Per sviluppare meglio le applicazioni in container per Kubernetes sin dal primo giorno, abbiamo scelto Eclipse Codewind che fornisce estensioni ai più famosi IDE per sviluppatori, tra cui VS Code, Eclipse ed Eclipse Che per i team che lavorano in un ambiente di sviluppo ospitato. Jane può creare entrambe le nuove applicazioni o modernizzare quelle esistenti, usando i suoi strumenti preferiti. Lo sviluppo del ciclo interno avviene all'interno di un container, fin dall'inizio, rendendo più facile per Jane essere sicura del suo codice quando viene archiviato. Jane può quindi controllare il suo codice in Git dove inizia la fase successiva del processo.
+
+
+Il controllo del codice in Git provoca l'avvio di un webhook; questo webhook avvia una pipeline CI / CD - fa tutto parte del ciclo di vita delle applicazioni integrato e automatizzato fornito da Kabanero. Per impostazione predefinita, utilizziamo le pipeline di Tekton per gestire il ciclo di vita della distribuzione. Tekton è un progetto open source nativo di Kubernetes per la creazione di condutture CI / CD, nato dal progetto Knative. Ulteriori dettagli saranno discussi in un blog successivo, incluso come collegare altre opzioni CI / CD.
+
+
+Lo stack di applicazioni utilizzato da Jane, che è stato creato da Champ, fa sì che il container venga costruito nel modo prescritto dal Kuwanetes Special Interest Group for Applications. Ciò consente a un componente di Kabanero chiamato Application Navigator di fornire una vista di gestione a tutte le parti di un'applicazione. Consente a gruppi di container che lavorano insieme di essere visualizzati e gestiti insieme da Todd e Jane.
+
+== Resta sintonizzato, abbiamo appena iniziato
+
+Man mano che il progetto avanza, ci vedrete costruire all'aperto. Presenteremo molti altri argomenti per ognuna delle nostre personalità chiave. Ecco alcuni argomenti che verranno:
+
+* Guide e campioni didattici
+* Runtime e lingue che possono essere utilizzate per creare applicazioni
+* Dettagli sull'hub applicazione e flussi di lavoro per Champ per gestirlo
+* Come vengono convalidate le applicazioni per la sicurezza
+* Come le API sono integrate nel flusso e gestite
+
+Continua a fare il check-in con noi. Vedrai il sito prendere vita con guide, codice e blog aggiuntivi. Nel frattempo, seguici su Twitter o unisciti al nostro canale lento per dirci cosa ne pensi o vuoi vedere di più!

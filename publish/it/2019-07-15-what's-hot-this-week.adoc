@@ -1,0 +1,31 @@
+---
+layout: post
+title: "Cosa c'è di caldo questa settimana?"
+categories: blog
+author_picture: https://avatars1.githubusercontent.com/u/28736793?s=400&v=4
+author_github: https://github.com/nateziemann
+seo-title: Kabanero.io - Cosa fa caldo questa settimana?
+seo-description: questa settimana stiamo davvero cercando di riscaldare lo sviluppo di app per Kubernetes. Scopri i nuovi annunci, i modi per interagire con noi e metterti in pratica.
+blog_description: "Questa settimana stiamo davvero cercando di riscaldare lo sviluppo di app per Kubernetes. Scopri nuovi annunci, modi per interagire con noi e fare pratica".
+
+language: it
+---
+= Cosa fa caldo questa settimana?
+Nathan Ziemann <https://github.com/nateziemann>
+
+Questa settimana stiamo davvero cercando di riscaldare lo sviluppo di app per Kubernetes. Scopri i nuovi annunci, i modi per interagire con noi e metterti in pratica.
+
+1. Oggi stiamo annunciando maggiori dettagli su Kabanero e sulla nostra esperienza di sviluppo di Kabanero con nuovi progetti open source di Eclipse Foundation e IBM. Dai un'occhiata a questo ultimo blog su IBM Developer con tutti i dettagli !! https://developer.ibm.com/blogs/cloud-native-apps-kubernetes-kabanero/[Creazione di app native cloud più veloci per Kubernetes con Kabanero.]
+
+2. Stiamo introducendo esperienze "Provalo". La nostra prima esperienza Kabanero è l'esperienza dello sviluppatore, incentrata sulla persona dello sviluppatore e sullo sviluppatore locale. Scopri come fare pratica su https://kabanero.io/try-it. In meno di 5 minuti puoi passare da zero all'applicazione in esecuzione in un cluster Knative / Kubernetes esistente. Guarda la nuova demo di YouTube e provala tu stesso.
+
+3. Saremo su https://conferences.oreilly.com/oscon/oscon-or[O’Reilly OSCON] questa settimana a Portland parlando di Kabanero e della nostra esperienza di sviluppo di Kabanero con Eclipse Codewind e Appsody. Se sei alla conferenza, fermati allo stand IBM e dacci un'occhiata. Ci piacerebbe avere tue notizie. Avremo esperti tecnici pronti a condividere, provare e ascoltare il tuo feedback.
+
+Inoltre, dai un'occhiata ai nostri repository GitHub. https://github.com/kabanero-io Se vuoi collaborare con gli sviluppatori, fatti coinvolgere, questo è il punto di partenza.
+
+
+== Resta sintonizzato, abbiamo appena iniziato.
+
+Abbiamo in programma di condividere le prime guide e un'altra esperienza "Try it", le prime raccolte in primo piano e ulteriori dettagli su ogni progetto open source integrato come parte di Kabanero.
+
+
