@@ -1,25 +1,25 @@
 ---
 layout: post
 title: "Qué está de moda esta semana?"
-categories: blog
+categorías: blog
 author_picture: https://avatars1.githubusercontent.com/u/28736793?s=400&v=4
 author_github: https://github.com/nateziemann
-seo-title: Kabanero.io - Qué está de moda esta semana?
-seo-description: "Esta semana realmente estamos buscando calentar el desarrollo de aplicaciones para Kubernetes. Vea nuevos anuncios, formas de relacionarse con nosotros y ponerse en práctica."
-
+seo-title: Kabanero.io - ¿Qué está de moda esta semana?
+seo-description: Esta semana realmente estamos buscando calentar el desarrollo de aplicaciones para Kubernetes. Vea nuevos anuncios, formas de relacionarse con nosotros y ponerse en práctica.
+blog_description: "Esta semana realmente estamos buscando calentar el desarrollo de aplicaciones para Kubernetes. Echa un vistazo a los nuevos anuncios, formas de interactuar con nosotros y ponerte en práctica."
 
 language: es
 ---
-= Qué está de moda esta semana?
+= ¿Qué está de moda esta semana?
 Nathan Ziemann <https://github.com/nateziemann>
 
 Esta semana realmente estamos buscando calentar el desarrollo de aplicaciones para Kubernetes. Vea nuevos anuncios, formas de relacionarse con nosotros y ponerse en práctica.
 
-1. Hoy anunciamos más detalles sobre Kabanero y nuestra experiencia de desarrollador de Kabanero con nuevos proyectos de código abierto de Eclipse Foundation e IBM. ¡Mira este último blog sobre IBM Developer con todos los detalles! https://developer.ibm.com/blogs/cloud-native-apps-kubernetes-kabanero/[Construye aplicaciones nativas de la nube más rápido para Kubernetes con Kabanero.]
+    1. Hoy anunciamos más detalles sobre Kabanero y nuestra experiencia de desarrollador de Kabanero con nuevos proyectos de código abierto de Eclipse Foundation e IBM. ¡Mira este último blog sobre IBM Developer con todos los detalles! https://developer.ibm.com/blogs/cloud-native-apps-kubernetes-kabanero/[Construye aplicaciones nativas de la nube más rápido para Kubernetes con Kabanero.]
 
-2. Estamos presentando experiencias de "Pruébalo". La primera es Kabanero Developer Experience, centrada en la personalidad del desarrollador y el desarrollador local. Vea cómo ponerse en práctica en https://kabanero.io/try-it. En menos de 5 minutos puede pasar de cero a la aplicación que se ejecuta en un clúster Knative / Kubernetes existente. Mira la nueva demostración de YouTube y pruébalo tú mismo.
+    2. Estamos presentando experiencias de "Pruébalo". La primera es Kabanero Developer Experience, centrada en la personalidad del desarrollador y el desarrollador local. Vea cómo ponerse en práctica en https://kabanero.io/try-it. En menos de 5 minutos puede pasar de cero a la aplicación que se ejecuta en un clúster Knative / Kubernetes existente. Mira la nueva demostración de YouTube y pruébalo tú mismo.
 
-3. Estaremos en https://conferences.oreilly.com/oscon/oscon-or[O’Reilly OSCON] esta semana en Portland hablando sobre Kabanero y nuestra experiencia de desarrollo de Kabanero con Eclipse Codewind y Appsody. Si estás en la conferencia, pasa por el stand de IBM y échanos un vistazo. Nos encantaría saber de usted. Tendremos expertos técnicos listos para compartir, demostrar y escuchar sus comentarios.
+    3. Estaremos en https://conferences.oreilly.com/oscon/oscon-or[OReilly OSCON] esta semana en Portland hablando sobre Kabanero y nuestra experiencia de desarrollo de Kabanero con Eclipse Codewind y Appsody. Si estás en la conferencia, pasa por el stand de IBM y échanos un vistazo. Nos encantaría saber de usted. Tendremos expertos técnicos listos para compartir, demostrar y escuchar sus comentarios.
 
 Además, echa un vistazo a nuestros repositorios de GitHub. https://github.com/kabanero-io Si quieres colaborar con desarrolladores, participa, ese es el lugar para comenzar.
 

@@ -1,0 +1,70 @@
+---
+layout: post
+title: "Willkommen bei Kabanero - Wo manche es heiß mögen"
+categories: blog
+author_picture: https://avatars2.githubusercontent.com/u/50369766
+author_github: https://github.com/Kabanero-io
+seo-title: Willkommen bei Kabanero
+
+seo-description: Kabanero ist ein Open-Source-Projekt, das darauf abzielt, mehrere grundlegende Open-Source-Technologien auf gut strukturierte Weise zusammenzuführen ...
+
+blog_description: "Kabanero ist ein Open-Source-Projekt, das darauf abzielt, mehrere grundlegende Open-Source-Technologien auf gut strukturierte Weise zusammenzuführen ..."
+
+language: de
+---
+= Willkommen bei Kabanero - wo manche es heiß mögen
+Alan Little <https://github.com/Kabanero-io>
+
+Willkommen beim Open Source-Projekt von Kabanero, bei dem es unser Ziel ist, die Erfahrung beim Erstellen von Apps auf Kubernetes ein wenig zu verfeinern. Unser Projekt konzentriert sich auf die Vereinfachung der Aufgabe der Architektur, Entwicklung, Bereitstellung und Verwaltung von Cloud-nativen Apps unter Verwendung maßgeschneiderter Anwendungsstacks und eng integrierter Tools, die im Einklang mit Open Source funktionieren.
+
+Kabanero vereint grundlegende Open Source-Technologien in einem modernen Framework auf Basis von Mikrodiensten für die Erstellung von Anwendungen auf Kubernetes. Die Anzahl der Open-Source-Technologien, die Unternehmen heute für die Bereitstellung von IT-Funktionen zur Verfügung haben, ist überwältigend. Kabanero reduziert die komplexen Auswahlmöglichkeiten, behält jedoch die Flexibilität bei. Mit Kabanero können Architekten Entwürfe und Definitionen erstellen, Entwickler Code sicherer schreiben und Bediener effizient verwalten
+
+Die Branche hat sich auf zwei Grundprinzipien konzentriert, die Kabanero verfolgt:
+
+* Das Erstellen von containerisierten Anwendungen mit containerisierter Middleware ist ein Muss.
+* Kubernetes ist die zugrunde liegende Container-Orchestrierungsumgebung für neue Anwendungen.
+
+Das Kabanero-Team hat persona-basierte Design-Überlegungen angestellt, die sich an den Bedürfnissen der beteiligten Rollen orientieren. Wir haben unsere Hypothese aus diesen Design Thinking Sessions mit Anwendern aus Unternehmen getestet, die auf dem Weg zu Cloud sind. Was wir als Ist-Zustand befunden haben, entspricht nicht den von diesen Kunden gewünschten Ergebnissen, und unsere vorgeschlagenen Soll-Zustände haben die Probleme, denen sie bei der Verlagerung von Verantwortlichkeiten zwischen den Personen begegneten, drastisch verbessert. Dies führte sie zu der Überzeugung, dass Kabanero Teams dabei unterstützen wird, Software schneller zu erstellen, bereit für die Cloud-Bereitstellung zu sein und mit der heutigen Organisationsstruktur Schritt zu halten, um effizienter Code bereitzustellen.
+
+
+Wir finden heute drei Personas in Organisationen, für die Kabanero entwickelt wurde - Champ, Jane und Todd.
+
+Champ "The architect" (Unternehmen, Lösung oder Anwendung)
+
+Champ ist dafür verantwortlich, dass die Gesamtarchitektur seines Unternehmens zusammenhält und die Geschäftsanwendungen den Vorschriften des Unternehmens und der Branche entsprechen. Er strebt nach Beständigkeit und Flexibilität in Bezug auf die von ihm ausgewählten Sprachen, Laufzeiten und Tools. Dies reduziert die Schulungskosten und ermöglicht Entwicklern, zwischen Projekten zu wechseln. Champ möchte Jane und Todd eine kleine Anzahl von Anwendungsstacks zur Verfügung stellen, mit denen sie Anwendungen effizient erstellen und verwalten können. Er möchte das Anwendungsvermögen des Unternehmens vorantreiben und die bedeutenden Investitionen, die er und seine Vorgänger im Namen des Unternehmens getätigt haben, modernisieren.
+
+Jane "Die etablierte Java-Entwicklerin"
+
+Jane ist erfahren in der Entwicklung von Java-, Java EE- und Spring-Anwendungen für herkömmliche Anwendungsserver. Jane möchte unbedingt neue Sprachen und Frameworks lernen, um das volle Potenzial von Cloud-Anwendungen und -Diensten auszuschöpfen. Ihre Rolle erfordert, dass sie sich auf Anwendungslogik, Geschäftslogik und die zugrunde liegende Infrastruktur konzentriert. Sie steht ständig unter dem Druck, Code schneller und mit höherer Qualität bereitzustellen. Champs Ziel ist es, Jane seine genehmigten Anwendungsstacks zur Verfügung zu stellen Jane entwickelt Anwendungen für Kubernetes.
+
+Todd "Der Betreiber"
+
+Todd ist für den Betrieb der Kubernetes-Plattform und der von Jane erstellten Anwendungen verantwortlich. Sein Fokus liegt auf der Anpassung einer Reihe von Automatisierungs-Pipelines, um sicherzustellen, dass die Anwendungen seinen Anforderungen für den Betrieb der Systeme entsprechen, für die er verantwortlich ist. Todd ist auch dafür verantwortlich, die Systeme zu überwachen und sicherzustellen, dass er die von seinem Unternehmen oder seiner Branche festgelegten Verfügbarkeitsanforderungen erfüllt. Todd stellt mithilfe einer Reihe von Standards einen reibungslosen Übergang zwischen dem Entwicklungsteam und der Bereitstellung von Code in der Produktion sicher und Automatisierung, um die kontinuierliche Einhaltung zu gewährleisten.
+
+== Worauf wir uns gerade konzentrieren ...
+
+Ein zentrales Kabanero-Konzept ist ein Application Stack. Ein Anwendungsstapel definiert die Laufzeiten und Frameworks, mit denen Jane die Anwendungen entwickelt. Es enthält auch Lehrmaterial, Beispiele und Dokumentationen, anhand derer sie lernen kann, wie diese Anwendungen erstellt werden. Hier steckt Know-how für die Bereitstellung auf Kubernetes, einschließlich Sicherheit, Umfang, Integrität und Aktualität. Der Anwendungsstapel ist die Entität, die Todd installiert und von Champ kuratiert, bevor er mit Jane geteilt wird.
+
+
+Anwendungsstapel enthalten sowohl Vorlagen für Janes Anwendung als auch zertifizierte Basiscontainer-Images, die eine Laufzeit (und vieles mehr) für Janes Code bieten. Champ ist dafür verantwortlich, seine genehmigten Application Stacks lokal in einem Application Hub zu kuratieren. Wir werden mehr darüber in einem kommenden Blogbeitrag schreiben.
+
+
+
+
+
+Wenn Sie den Code in Git einchecken, wird ein Webhook gestartet. Durch diesen Webhook wird eine CI / CD-Pipeline gestartet. Dies ist Teil des von Kabanero bereitgestellten integrierten und automatisierten Anwendungslebenszyklus. Standardmäßig verwenden wir Tekton-Pipelines, um den Bereitstellungslebenszyklus zu verwalten. Tekton ist ein Open-Source-Projekt von Kubernetes zum Erstellen von CI / CD-Pipelines, das aus dem Knative-Projekt stammt. Weitere Details werden in einem späteren Blog erläutert, einschließlich des Einfügens anderer CI / CD-Optionen.
+
+
+Der von Jane verwendete Anwendungsstapel, der von Champ eingerichtet wurde, bewirkt, dass der Container auf eine Weise erstellt wird, die von der Kubernetes Special Interest Group for Applications vorgeschrieben ist. Auf diese Weise kann eine Komponente von Kabanero namens Application Navigator eine Verwaltungsansicht für alle Teile einer Anwendung bereitstellen. Dadurch können Gruppen von Containern, die zusammenarbeiten, von Todd und Jane gemeinsam visualisiert und verwaltet werden.
+
+== Bleiben Sie dran, wir fangen gerade erst an
+
+Im Verlauf des Projekts werden wir uns offen zeigen. Wir werden für jede unserer Schlüsselpersonen viele weitere Themen vorstellen. Hier sind einige Themen, die kommen werden:
+
+* Bildungsführer und Muster
+* Laufzeiten und Sprachen, die zum Erstellen von Anwendungen verwendet werden können
+* Details zum Application Hub und zu den Workflows, die Champ für die Verwaltung benötigt
+* Wie Anwendungen aus Sicherheitsgründen validiert werden
+* Wie APIs in den Flow integriert und verwaltet werden
+
+Checken Sie weiter bei uns ein. Sie werden sehen, wie die Site mit Anleitungen, Code und zusätzlichen Blogs zum Leben erweckt wird. Folgen Sie uns in der Zwischenzeit auf Twitter oder besuchen Sie unseren Slack-Channel, um uns Ihre Meinung oder Ihre Wünsche mitzuteilen!

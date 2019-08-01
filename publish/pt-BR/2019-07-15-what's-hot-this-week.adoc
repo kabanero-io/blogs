@@ -1,0 +1,31 @@
+---
+layout: post
+title: "O que está quente esta semana?"
+categories: blog
+author_picture: https://avatars1.githubusercontent.com/u/28736793?s=400&v=4
+author_github: https://github.com/nateziemann
+seo-title: Kabanero.io - O que é esta semana?
+seo-description: esta semana, estamos realmente tentando aquecer o desenvolvimento de aplicativos para o Kubernetes. Confira novos anúncios, maneiras de interagir conosco e participar ativamente.
+blog_description: "Esta semana estamos realmente procurando aquecer o desenvolvimento de aplicativos para o Kubernetes. Confira novos anúncios, maneiras de interagir conosco e participar ativamente."
+
+language: pt-BR
+---
+= que está quente esta semana?
+Nathan Ziemann <https://github.com/nateziemann>
+
+Esta semana estamos realmente querendo aquecer o desenvolvimento de aplicativos para o Kubernetes. Confira novos anúncios, maneiras de interagir conosco e participar ativamente.
+
+    1. Hoje estamos anunciando mais detalhes sobre o Kabanero e nossa Experiência de Desenvolvedor Kabanero com novos projetos de código aberto da Eclipse Foundation e da IBM. Confira este último blog no IBM Developer com todos os detalhes !! https://developer.ibm.com/blogs/cloud-native-apps-kubernetes-kabanero/[Construa aplicativos nativos da nuvem mais rapidamente para o Kubernetes com o Kabanero.]
+
+    2. Estamos introduzindo experiências do tipo "Experimente". Nosso primeiro é o Kabanero Developer Experience, focado na persona do desenvolvedor e no desenvolvedor local. Veja como obter hands-on em https://kabanero.io/try-it. Em menos de 5 minutos, você pode ir de zero para o aplicativo em execução em um cluster Knative / Kubernetes existente. Assista à nova demonstração do YouTube e experimente você mesmo.
+
+
+
+    3.Além disso, confira nossos repositórios do GitHub. https://github.com/kabanero-io Se você quer colaborar com os desenvolvedores, envolva-se, este é o lugar para começar.
+
+
+== Fique ligado, estamos apenas começando.
+
+Pretendemos compartilhar os primeiros guias e outra experiência “Experimentar”, coleções de primeiro destaque e mais detalhes sobre cada projeto de código aberto integrado como parte do Kabanero.
+
+

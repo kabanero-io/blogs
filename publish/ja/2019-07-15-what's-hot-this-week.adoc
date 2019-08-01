@@ -1,0 +1,31 @@
+---
+layout: post
+title: "今週何が暑いですか"
+categories: blog
+author_picture: https://avatars1.githubusercontent.com/u/28736793?s=400&v=4
+author_github: https://github.com/nateziemann
+seo-title: Kabanero.io  - 今週の一番ホットなニュース
+seo-description: 今週は、Kubernetesのためのアプリ開発を強化することを本当に検討しています。新しいアナウンス、私たちと関わり合い、実践する方法を調べてください。
+blog_description: "今週は、Kubernetesのためのアプリ開発を強化することを本当に検討しています。新しい発表、私​​たちと関わり合い、実践する方法をチェックしてください。"
+
+language: ja
+---
+= 今週何が暑いですか？
+ネイサンジーマン <https://github.com/nateziemann>
+
+今週は、Kubernetesのためのアプリ開発を強化することを本当に検討しています。新しいアナウンス、私たちと関わり合い、実践する方法を調べてください。
+
+1.本日、KabaneroおよびKabanero Developer Experienceの詳細について、Eclipse FoundationおよびIBMの新しいオープンソースプロジェクトを発表します。詳細については、IBM Developerの最新ブログをチェックしてください。 https://developer.ibm.com/blogs/cloud-native-apps-kubernetes-kabanero/ [KabernetesをKabaneroで使用すると、クラウドネイティブアプリケーションをより速く構築できます。]
+
+2.Try it体験を紹介しています。私たちの最初のKabanero Developer Experienceは、開発者のペルソナとローカル開発者に焦点を当てています。 https://kabanero.io/try-itで実践的になる方法をチェックしてください。 5分以内に、ゼロから既存のKnative / Kubernetesクラスタで実行されているアプリケーションに移動できます。新しいYouTubeデモを見て、試してみてください。
+
+3.今週ポートランドでhttps://conferences.oreilly.com/oscon/oscon-or [OReReilly OSCON]に来て、Kabaneroと、Eclipse CodewindとAppsodyを使ったKabanero開発経験について話します。会議に参加している場合は、IBMブースに立ち寄って、私たちをチェックしてください。私たちはあなたから話を聞くのが大好きです。技術的な専門家があなたの意見を共有し、デモし、そして聞くことができます。
+
+さらに、GitHubのレポジトリを調べてください。 https://github.com/kabanero-io開発者とコラボレートしたい場合は、ぜひ参加してください。そこから始めることができます。
+
+
+== しばらくお待ちください、まだ始まったばかりです。
+
+Kabaneroの一部として統合されている各オープンソースプロジェクトについての最初のガイドと別の「Try it」エクスペリエンス、最初の特集コレクション、および詳細を共有する予定です。
+
+
