@@ -1,19 +1,19 @@
 ---
 layout: post
-title：「カバネロへようこそ - 暑いところが好き」
+title: "カバネロへようこそ - 暑いところが好き"
 categories: blog
-author_picture：https://avatars2.githubusercontent.com/u/50369766
-author_github：https://github.com/Kabanero-io
-seo-title：カバネロへようこそ
+author_picture: https://avatars2.githubusercontent.com/u/50369766
+author_github: https://github.com/Kabanero-io
+seo-title: カバネロへようこそ
 
-seo-description：Kabaneroは、いくつかの基本的なオープンソーステクノロジをうまく設計された方法でまとめることに焦点を絞ったオープンソースプロジェクトです...
+seo-description: Kabaneroは、いくつかの基本的なオープンソーステクノロジをうまく設計された方法でまとめることに焦点を絞ったオープンソースプロジェクトです...
 
-blog_description：「Kabaneroは、いくつかの基本的なオープンソーステクノロジをうまく設計された方法でまとめることに焦点を絞ったオープンソースプロジェクトです...」
+blog_description: Kabaneroは、"いくつかの基本的なオープンソーステクノロジをうまく設計された方法でまとめることに焦点を絞ったオープンソースプロジェクトです..."
 
 language: ja
 ---
 = Kabaneroへようこそ - 暑いところが好きです
-アランリトル<https://github.com/Kabanero-io>
+アランリトル <https://github.com/Kabanero-io>
 
 Kabaneroオープンソースプロジェクトへようこそ。ここでは、Kubernetesでアプリケーションを構築する経験に真剣な味を追加することを目的としています。調整されたアプリケーションスタックと、オープンソースと調和して機能する緊密に統合されたツール。
 

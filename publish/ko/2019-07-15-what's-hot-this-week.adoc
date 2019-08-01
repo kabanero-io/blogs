@@ -2,23 +2,24 @@
 layout: post
 title : "이번 주에는 뭐야?"
 categories: blog
-author_picture : https://avatars1.githubusercontent.com/u/28736793?s=400&v=4
+author_picture: https://avatars1.githubusercontent.com/u/28736793?s=400&v=4
+author_github: https://github.com/nateziemann
 seo-title: Kabanero.io - What's Hot this week?
 seo-description : 이번 주에는 Kubernetes의 앱 개발을 열렬히 기다리고 있습니다. 새로운 공지 사항, 우리와의 교류 및 직접 참여 방법을 확인하십시오.
-blog_description : "이번 주에 Kubernetes의 앱 개발을 열렬히 기다리고 있습니다. 새로운 발표, 우리와의 소통 및 직접 참여 방법을 확인하십시오."
+blog_description : "이번 주에 Kubernetes의 앱 개발을 열렬히 기다리고 있습니다. 새로운 발표, 우리와의 소통 및 직접 참여 방법을 확인하십시오..."
 
 language: ko
 ---
-= 이번 주 Hot What 's?
+= 이번 주?
 Nathan Ziemann <https://github.com/nateziemann>
 
 이번 주에 Kubernetes의 앱 개발을 열렬히 기다리고 있습니다. 새로운 공지 사항, 우리와의 교류 및 직접 참여 방법을 확인하십시오.
 
+    1.https://developer.ibm.com/blogs/cloud-native-apps-kubernetes-kabanero/[Build cloud-native apps faster for Kubernetes with Kabanero.] 
+    
+    2."Try it"경험을 소개합니다. 우리의 첫 번째는 Kabanero 개발자 경험이며, 개발자 개인 및 로컬 개발자에 중점을 둡니다. https://kabanero.io/try-it에서 실습 방법을 확인하십시오. 5 분 이내에 기존의 Knative / Kubernetes 클러스터에서 실행중인 응용 프로그램에 이르기까지 이동할 수 있습니다. 새로운 YouTube 데모를보고 직접 사용해보십시오.
 
-
-2. "Try it"경험을 소개합니다. 우리의 첫 번째는 Kabanero 개발자 경험이며, 개발자 개인 및 로컬 개발자에 중점을 둡니다. https://kabanero.io/try-it에서 실습 방법을 확인하십시오. 5 분 이내에 기존의 Knative / Kubernetes 클러스터에서 실행중인 응용 프로그램에 이르기까지 이동할 수 있습니다. 새로운 YouTube 데모를보고 직접 사용해보십시오.
-
-3. 이번 주 포틀랜드에서 https://conferences.oreilly.com/oscon/oscon-or[O'Reilly OSCON]에있을 예정입니다. Kabanero와 Eclipse Codewind 및 Appsody를 사용한 Kabanero 개발 경험에 대해 이야기합니다. 컨퍼런스에 참석 중이면 IBM 부스에 들러 우리를 확인하십시오. 우리는 당신에게서 듣고 싶습니다. 기술 전문가가 의견을 공유하고 데모하고 청취 할 준비를 갖습니다.
+    3.이번 주 포틀랜드에서 https://conferences.oreilly.com/oscon/oscon-or[O'Reilly OSCON]에있을 예정입니다. Kabanero와 Eclipse Codewind 및 Appsody를 사용한 Kabanero 개발 경험에 대해 이야기합니다. 컨퍼런스에 참석 중이면 IBM 부스에 들러 우리를 확인하십시오. 우리는 당신에게서 듣고 싶습니다. 기술 전문가가 의견을 공유하고 데모하고 청취 할 준비를 갖습니다.
 
 또한 GitHub repos를 확인하십시오. https://github.com/kabanero-io 개발자와 협력하고 싶다면 참여하십시오. 시작해야 할 곳입니다.
 

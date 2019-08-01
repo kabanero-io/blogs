@@ -8,7 +8,7 @@ seo-title: Kabanero.io  - 本周热点是什么？
 seo-description: 本周我们真的希望为Kubernetes加热应用程序开发。查看新的公告，与我们互动的方式并亲自动手。
 blog_description: “本周我们真的希望为Kubernetes加热应用程序开发。查看新的公告，与我们互动的方式并亲自动手。”
 
-language: zh-CH
+language: zh-CN
 ---
 = 这个星期有什么热点？
 Nathan Ziemann <https://github.com/nateziemann>

@@ -10,7 +10,7 @@ seo-description: Kabanero是一个开源项目，专注于以精心设计的方�
 
 blog_description: “Kabanero是一个开源项目，专注于以精心设计的方式汇集几种基础开源技术...”
 
-language: zh-CH
+language: zh-CN
 ---
 = 欢迎来到Kabanero  - 有些人喜欢它
 Alan Little <https://github.com/Kabanero-io>
