@@ -1,0 +1,70 @@
+---
+layout: postar
+title: "Bem-vindo ao Kabanero - Onde alguns gostam de calor"
+categorias: blog
+author_picture: https://avatars2.githubusercontent.com/u/50369766
+author_github: https://github.com/Kabanero-io
+seo-title: Bem-vindo ao Kabanero
+
+seo-description: O Kabanero é um projeto de código aberto que está focado em reunir várias tecnologias básicas de código aberto de maneiras bem arquitetadas ...
+
+blog_description: "O Kabanero é um projeto de código aberto que está focado em reunir várias tecnologias básicas de código aberto de maneiras bem arquitetadas ..."
+
+language: pt_BR
+---
+= Bem-vindo ao Kabanero - onde alguns gostam de calor
+Alan Little <https://github.com/Kabanero-io>
+
+Bem-vindo ao projeto de código aberto Kabanero, cujo objetivo é adicionar um pouco de sabor à experiência de criar aplicativos no Kubernetes. Nosso projeto é focado em simplificar a tarefa de arquitetar, desenvolver, implantar e gerenciar aplicativos nativos da nuvem, usando pilhas de aplicativos personalizadas e ferramentas totalmente integradas que funcionam em harmonia com o código aberto.
+
+A Kabanero reúne as tecnologias básicas de código aberto em uma moderna estrutura baseada em microsserviços para criar aplicativos no Kubernetes. O número de empresas de tecnologias de código aberto que hoje dispõem para fornecer funções de TI é impressionante. O Kabanero reduz as escolhas complexas e ainda mantém a flexibilidade. O Kabanero permite que os arquitetos projetem e definam, que os desenvolvedores escrevam códigos com mais rapidez e que os operadores gerenciem com eficiência.
+
+A indústria convergiu em dois princípios fundamentais que o Kabanero adota:
+
+* Construir aplicações conteinerizadas com middleware conteinerizado é imprescindível.
+* O Kubernetes é o ambiente de orquestração de contêineres subjacente para novos aplicativos.
+
+A equipe de Kabanero fez o design baseado em persona pensando nas necessidades dos papéis envolvidos. Testamos nossa hipótese a partir dessas sessões de design thinking com usuários de empresas que estão em uma jornada para mudar para o Cloud. O que descobrimos como o estado como está, não atende a esses resultados desejados pelos clientes, e os nossos futuros estados propostos melhoraram drasticamente os problemas que eles estavam enfrentando com a mudança de responsabilidades entre as pessoas. Isso os levou a acreditar que a Kabanero ajudará as equipes a criar software mais rápido, pronto para a implantação na nuvem, e se encaixa na maneira como as organizações estão estruturadas hoje e as encaminha para uma maneira mais eficiente de fornecer código.
+
+
+Encontramos três personas em todas as organizações hoje para as quais o Kabanero foi projetado - Champ, Jane e Todd.
+
+Champ "O arquiteto" (Enterprise, solução ou aplicação)
+
+Champ é responsável por garantir que a arquitetura geral de sua empresa permaneça unida e os aplicativos de negócios são regidos para atender aos regulamentos da empresa e do setor. Ele está procurando por consistência e flexibilidade aplicadas a seus idiomas, tempos de execução e ferramentas escolhidos. Isso reduz os custos de treinamento e permite que os desenvolvedores se movimentem entre os projetos. A Champ procura fornecer a Jane e Todd um pequeno número de pilhas de aplicativos que permitem que eles criem e gerenciem aplicativos com eficiência. Ele quer levar adiante a propriedade de aplicativos da empresa e modernizar o investimento significativo que ele e seus antecessores fizeram em nome da empresa.
+
+Jane "O desenvolvedor de Java estabelecido"
+
+Jane é hábil no desenvolvimento de aplicativos Java, Java EE e Spring para servidores de aplicativos tradicionais. Jane está ansiosa para aprender novas linguagens e estruturas para explorar todo o potencial dos aplicativos e serviços nativos da nuvem. Seu papel exige que ela se concentre na lógica de aplicativos, na lógica de negócios e na infraestrutura subjacente. Ela está constantemente sob pressão para fornecer código em um ritmo mais rápido e com maior qualidade. A meta da Champ é fornecer a Jane suas pilhas de aplicativos aprovadas para permitir Jane para desenvolver aplicativos para o Kubernetes.
+
+Todd "O operador"
+
+Todd é responsável por operar a plataforma Kubernetes e os aplicativos produzidos por Jane. Seu foco é adaptar um conjunto de pipelines de automação para garantir que os aplicativos atendam às suas necessidades de execução dos sistemas pelos quais ele é responsável. Todd também é responsável por monitorar os sistemas e garantir que ele possa atender aos requisitos de disponibilidade definidos por sua empresa ou pela linha de negócios. Todd garante uma transição suave entre a equipe de desenvolvimento e a entrega do código na produção usando um conjunto de padrões e automação para manter a conformidade contínua.
+
+== O que estamos atualmente focados em ...
+
+Um conceito central de Kabanero é uma pilha de aplicativos. Uma pilha de aplicativos define os tempos de execução e as estruturas que Jane usará para desenvolver os aplicativos. Também inclui material educativo, amostras e documentação que ela pode usar para aprender como criar esses aplicativos. Isto é infundido com perícia para implementar em Kubernetes inclusive segurança, balança, saúde e vivacidade. A pilha de aplicação é a entidade que Todd instala e Champ curates antes de compartilhar isto com Jane.
+
+
+As pilhas de aplicativos incluirão os dois modelos para o aplicativo de Jane, bem como as imagens de contêineres de base certificadas que fornecem um tempo de execução (e muito mais) para o código de Jane. Champ é responsável por curar suas pilhas de aplicativos aprovadas localmente em um Application Hub. Nós estaremos escrevendo mais sobre isso em um post no blog.
+
+
+
+
+
+Verificar o código no Git faz com que um webhook seja iniciado; Esse webhook faz com que um pipeline de CI / CD seja iniciado - tudo isso é parte do ciclo de vida de aplicativos integrado e automatizado que o Kabanero fornece. Por padrão, usamos os pipelines Tekton para gerenciar o ciclo de vida da implantação. O Tekton é um projeto de código aberto nativo do Kubernetes para criar pipelines de CI / CD, originadas do projeto Knative. Mais detalhes serão discutidos em um blog posterior, incluindo como conectar outras opções de CI / CD.
+
+
+A pilha de aplicativos usada por Jane, que foi configurada pela Champ, faz com que o contêiner seja construído de uma maneira que é prescrita pelo Kubernetes Special Interest Group for Applications. Isso permite que um componente do Kabanero chamado Application Navigator forneça uma visão de gerenciamento para todas as partes de um aplicativo. Ele permite que grupos de contêineres que trabalham juntos sejam visualizados e gerenciados juntos por Todd e Jane.
+
+== Fique ligado, estamos apenas começando
+
+À medida que o projeto progride, você nos verá construindo ao ar livre. Apresentaremos muitos outros tópicos para cada uma das nossas principais personas. Aqui estão alguns tópicos que estão por vir:
+
+* Guias de educação e amostras
+* Tempos de execução e idiomas que podem ser usados u200bu200bpara criar aplicativos
+* Detalhes sobre o Application Hub e os fluxos de trabalho do Champ para gerenciá-lo
+* Como os aplicativos são validados para segurança
+* Como as APIs são integradas no fluxo e gerenciadas
+
+Mantenha o check-in conosco. Você verá o site ganhando vida com guias, código e blogs adicionais. Enquanto isso, siga-nos no Twitter, ou participe do nosso canal slack para nos dizer o que você pensa ou quer ver mais!

@@ -1,16 +1,14 @@
 ---
-layout: post
-title: "Bienvenido a Kabanero - Donde a algunos les gusta"
+diseño: publicación
+título: "Bienvenido a Kabanero - Donde a algunos les gusta"
 categorías: blog
-author_picture: https://avatars2.githubusercontent.com/u/50369766
+foto del autor: https://avatars2.githubusercontent.com/u/50369766
 author_github: https://github.com/Kabanero-io
-seo-title: Bienvenido a Kabanero
+seo-título: Bienvenido a Kabanero
 
 seo-description: Kabanero es un proyecto de código abierto que se centra en reunir varias tecnologías fundamentales de código abierto de formas bien diseñadas ...
 
 blog_description: "Kabanero es un proyecto de código abierto que se centra en reunir varias tecnologías fundamentales de código abierto de formas bien diseñadas ..."
-
-language: es
 ---
 = Bienvenido a Kabanero, donde a algunos les gusta el calor
 Alan Little <https://github.com/Kabanero-io>
