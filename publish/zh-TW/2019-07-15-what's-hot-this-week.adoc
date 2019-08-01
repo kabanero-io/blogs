@@ -1,0 +1,60 @@
+---
+layout: post
+title: “本周有什麼熱點？”
+categories: blog
+author_picture: https://avatars1.githubusercontent.com/u/28736793?s=400&v=4
+author_github: https://github.com/nateziemann
+seo-title: Kabanero.io  - 本週熱點是什麼？
+seo-description: 本週我們真的希望為Kubernetes加熱應用程序開發。查看新的公告，與我們互動的方式並親自動手。
+blog_description: “本週我們真的希望為Kubernetes加熱應用程序開發。查看新的公告，與我們互動的方式並親自動手。”
+
+language: zh-TW
+---
+= 這個星期有什麼熱點？
+Nathan Ziemann <https://github.com/nateziemann>
+
+本週我們真的希望為Kubernetes加熱應用程序開發。查看新的公告，與我們互動的方式並親自動手。
+
+1.今天，我們將通過Eclipse Foundation和IBM的新開源項目宣布有關Kabanero和我們的Kabanero開發者體驗的更多細節。查看IBM Developer上最新的博客，了解所有細節！ https://developer.ibm.com/blogs/cloud-native-apps-kubernetes-kabanero/ [與Kabanero一起為Kubernetes更快地構建雲原生應用程序。]
+
+我們正在介紹“試一試”的經歷。我們的第一個是Kabanero開發者體驗，專注於開發人員角色和本地開發人員。查看如何在https://kabanero.io/try-it上親自動手。在不到5分鐘的時間內，您可以從零到應用程序在現有的Knative / Kubernetes集群中運行。觀看新的YouTube演示並親自試用。
+
+
+
+另外，看看我們的GitHub回購。 https://github.com/kabanero-io如果您想與開發人員合作，請參與其中，這是您的起點。
+
+
+== 請繼續關注，我們剛剛開始。
+
+我們計劃分享第一個指南和另一個“嘗試它”的經驗，第一個特色集合，以及有關作為Kabanero一部分集成的每個開源項目的更多細節。
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

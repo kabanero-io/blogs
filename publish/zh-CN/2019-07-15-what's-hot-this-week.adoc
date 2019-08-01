@@ -1,0 +1,56 @@
+---
+layout: post
+title: “本周有什么热点？”
+categories: blog
+author_picture: https://avatars1.githubusercontent.com/u/28736793?s=400&v=4
+author_github: https://github.com/nateziemann
+seo-title: Kabanero.io  - 本周热点是什么？
+seo-description: 本周我们真的希望为Kubernetes加热应用程序开发。查看新的公告，与我们互动的方式并亲自动手。
+blog_description: “本周我们真的希望为Kubernetes加热应用程序开发。查看新的公告，与我们互动的方式并亲自动手。”
+
+language: zh-CH
+---
+= 这个星期有什么热点？
+Nathan Ziemann <https://github.com/nateziemann>
+
+本周我们真的希望为Kubernetes加热应用程序开发。查看新的公告，与我们互动的方式并亲自动手。
+
+
+
+我们正在介绍“尝试它”的经历。我们的第一个是Kabanero开发者体验，专注于开发人员角色和本地开发人员。查看如何在https://kabanero.io/try-it上亲自动手。在不到5分钟的时间内，您可以从零到应用程序在现有的Knative / Kubernetes集群中运行。观看新的YouTube演示并亲自试用。
+
+
+
+另外，看看我们的GitHub回购。 https://github.com/kabanero-io如果您想与开发人员合作，请参与其中，这是您的起点。
+
+
+== 请继续关注，我们刚刚开始。
+
+我们计划分享第一个指南和另一个“尝试它”的经验，第一个特色集合，以及有关作为Kabanero一部分集成的每个开源项目的更多细节。
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
