@@ -22,8 +22,6 @@ The Kabanero operator has introduced variable substitution in the collection pip
 
 Kabanero installs an OKD console extension we've called the OKD landing page.   The Landing Page has been enhanced to display active collections, links to supporting software, like the Tekton dashboard, as well as delivering documentation and new Guides accessible right from your OKD cluster.
 
- http://github.com/kabanero-io/blogs/img/blogs/Kabanero020.png
-
 Speaking of guides, you can also find new step-by-step instructions for getting the most out of Kabanero here: https://kabanero.io/guides/.
 
 The Kabanero Foundation has introduced a collection management CLI that allows fine-grained control over collections, synchronizing collection updates.  An integration with Github allows your organization to leverage your existing team permissions to authenticate and authorize changes to the Kabanero Instance.  The 0.2.0 release provides CLI binaries for Linux, MacOS and Windows platforms.
