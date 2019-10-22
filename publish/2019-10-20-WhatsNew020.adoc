@@ -47,4 +47,4 @@ The Kabanero support scripts include a sample script that uninstalls Kabanero an
 ## Kabanero operator, enhanced
 The Kabanero operator now includes a –targetNameSpaces configuration that defines a list of namespaces that help to manage Appsody application deployments with Kabanero using a controlled set of namespaces defined by the architect and operations roles. To simplify collection development, variable substitution is introduced to allow the same pipeline template to be used for multiple collections. This allows you to use one pipeline for multiple collections.
 
-As always you can, https://kabanero.io/try-it/[try it out].
+As always you can, https://kabanero.io/try-it/[try it out]!
