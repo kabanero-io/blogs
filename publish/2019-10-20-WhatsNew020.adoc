@@ -5,6 +5,10 @@ categories: blog
 author: Stephen Kinder
 author_picture: https://avatars3.githubusercontent.com/u/50876789
 author_github: https://github.com/stephenkinder
+additional_authors: 
+ - name: Nathan Ziemann
+   github: https://github.com/nateziemann
+   image: https://avatars1.githubusercontent.com/u/28736793?s=400&v=4
 seo-title: What is new in release 0.2.0
 seo-description: See what is hot in Kabanero v0.2.0. New features include more customization for enterprise, managing microservice composed applications, and Guides.
 blog_description: "See what is hot in Kabanero v0.2.0. New features include more customization for enterprise, managing microservice composed applications, and Guides."
