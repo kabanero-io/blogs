@@ -2,6 +2,7 @@
 layout: post
 title: "What's New in Release 0.2.0"
 categories: blog
+author: Stephen Kinder
 author_picture: https://avatars3.githubusercontent.com/u/50876789
 author_github: https://github.com/stephenkinder
 seo-title: What is new in release 0.2.0
@@ -9,14 +10,10 @@ seo-description: See what is hot in Kabanero v0.2.0. New features include more c
 blog_description: "See what is hot in Kabanero v0.2.0. New features include more customization for enterprise, managing microservice composed applications, and Guides."
 ---
 
-= What's new in 0.2.0
-Stephen Kinder <https://github.com/stephenkinder>
-Nate Ziemann <https://github.com/nateziemann>
-
 Today you can get your hands on the next monthly release of Kabanero, v0.2.0.  We're working towards delivering on a monthly cadence so stay tuned to what November and December bring as well.  We’ve been busy making a ton of improvements including new features, enhancements, and good old fashion bug fixes.  One focus area for this release is enhancements for the Architect persona to better support customizations for the enterprise.  A new feature we’d like to mention is a Kubernetes Application Navigator that assists with managing microservice composed applications, which aligns with how the Kubernetes SIG-apps describe applications.  Check out all the details on everything new below:  
 
 ## Collection CLI
-The Collection CLI has been introduced with fine-grained control over collections and synchronizing collection updates.  With the Collection CLI, you can view the status of collections, temporarily deactivate a collection as well as synchronize curated-collection updates. This feature also assists the enterprise manage collections in a Collection Hub by leveraging team permissions in github to authenticate and authorize for a specific Kabanero instances deployed in a Kubernetes cluster.
+The Collection CLI has been introduced with fine-grained control over collections and synchronizing collection updates.  With the Collection CLI, you can view the status of collections, temporarily deactivate a collection as well as synchronize curated-collection updates. This feature also assists the enterprise manage collections in a Collection Hub by leveraging team permissions in GitHub to authenticate and authorize for a specific Kabanero instances deployed in a Kubernetes cluster.
 
 ## Collections 0.2.0
 Use the features in Kabanero collections to develop microservices and applications for the enterprise. These collections include enhancements for security, performance, and bug fixes.
@@ -31,14 +28,14 @@ Collections are built from https://developers.redhat.com/products/rhel/ubi/[Univ
 
 Kabanero now provides an integration point in the OKD management console, making it easy for developers to find which collections are available to them along with a Tekton dashboard to see the pipelines ready for the collections.
 
-image::/img/blogs/Kabanero020.png[link="/img/blogs/Kabanero020.png" alt="Kabanero 0.2.0"]
+image::/img/blog/Kabanero020.png[link="/img/blogs/Kabanero020.png" alt="Kabanero 0.2.0"]
 
 ## Guides
-Guides are now available on the Kabanero website to help you to learn more about Kabanero. Guides provide step-by-step instructions with a real use case in mind to help you get started quickly. See https://kabanero.io/guides/
+Guides are now available on the Kabanero website to help you to learn more about Kabanero. Guides provide step-by-step instructions with a real use case in mind to help you get started quickly. See https://kabanero.io/guides/[Kabanero Guides]
 
 
 ## Manage microservice composed applications
-Kabanero now integrates a new open source project called [kAppNav] (https://kappnav.io/) which is a Kubernetes Application Navigator that assists with managing microservice composed applications. This provides display, inspection, understanding, and navigation of the deployed resources that comprise an application. This is installed through a Kubernetes operator and included in the user experience.
+Kabanero now integrates a new open source project called https://kappnav.io/[kAppNav] which is a Kubernetes Application Navigator that assists with managing microservice composed applications. This provides display, inspection, understanding, and navigation of the deployed resources that comprise an application. This is installed through a Kubernetes operator and included in the user experience.
 
 The https://github.com/kubernetes-sigs/application/blob/master/config/crds/app_v1beta1_application.yaml[Application Custom Resource Definition (CRD)] from the https://github.com/kubernetes-sigs/application[Kubernetes Application SIG] is used as the basis for describing applications.
 

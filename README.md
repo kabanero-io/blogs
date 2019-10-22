@@ -17,7 +17,7 @@ Create a pull request with the content of the blog post placed in the `drafts` f
 
 `publish` folder contains blog posts that are ready to be published
 
-`img/blog` folder contains images used in the blog `adoc` files
+`img` folder contains images used in the blog `adoc` files. These images are copied over to the website's `/img/blog` dir during build.
 
 ### Viewing your blog post on a local development environment
  1. Setup a local development environment by following [the local setup](https://github.com/kabanero-io/kabanero-website/blob/master/CONTRIBUTING.md#local-development-setup)
