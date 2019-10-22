@@ -5,8 +5,8 @@ categories: blog
 author_picture: https://avatars3.githubusercontent.com/u/50876789
 author_github: https://github.com/stephenkinder
 seo-title: What is new in release 0.2.0
-seo-description: What is new in the 0.2.0 release - this covers the new namespace support, ease of use enhancements and guides.
-blog_description: "What is new in the 0.2.0 release - this covers the new namespace support, ease of use enhancements and guides."
+seo-description: See what is hot in Kabanero v0.2.0. New features include more customization for enterprise, managing microservice composed applications, and Guides.
+blog_description: "See what is hot in Kabanero v0.2.0. New features include more customization for enterprise, managing microservice composed applications, and Guides."
 ---
 
 = What's new in 0.2.0
