@@ -12,32 +12,39 @@ blog_description: "What is new in the 0.2.0 release - this covers the new namesp
 = What's new in 0.2.0
 Stephen Kinder <https://github.com/stephenkinder>
 
-Kabanero Foundation is a new open source project focused on bringing together foundational open source technologies into a modern microservices-based framework.   With the first update of the Kabanero project, we've been busy making a ton of improvements.  
+Today you can get your hands on the next monthly release of Kabanero, v0.2.0.  We're working towards delivering on a monthly cadence so stay tuned to what November and December bring as well.  We’ve been busy making a ton of improvements including new features, enhancements, and good old fashion bug fixes.  One focus area for this release is enhancements for the Architect persona to better support customizations for the enterprise.  A new feature we’d like to mention is a Kubernetes Application Navigator that assists with managing microservice composed applications, which aligns with how the Kubernetes SIG-apps describe applications.  Check out all the details on everything new below:  
 
-Control
-The Kabanero operator introduces the `--targetNameSpace` parameter, which defines the set of valid NameSpaces for which the Appsody operator watches for the deployment of applications.  
+## Collection CLI
+The Collection CLI has been introduced with fine-grained control over collections and synchronizing collection updates.  With the Collection CLI, you can view the status of collections, temporarily deactivate a collection as well as synchronize curated-collection updates. This feature also assists the enterprise manage collections in a Collection Hub by leveraging team permissions in github to authenticate and authorize for a specific Kabanero instances deployed in a Kubernetes cluster.
 
-Ease of Use
-The Kabanero operator has introduced variable substitution in the collection pipelines, simplifying collection curation.   The Kabanero Foundation provides a must-gather script to help diagnostic activities, and an uninstall script which can help in try-it and POC activities.
+## Collections 0.2.0
+Use the features in Kabanero collections to develop microservices and applications for the enterprise. These collections include enhancements for security, performance, and bug fixes.
 
-Kabanero installs an OKD console extension we've called the OKD landing page.   The Landing Page has been enhanced to display active collections, links to supporting software, like the Tekton dashboard, as well as delivering documentation and new Guides accessible right from your OKD cluster.
+* java-microprofile
+* java-spring-boot2
+* node-js-express
+* node-js-loopback
+* node-js
 
-image::/img/guide/Kabanero020.png[link="/img/Kabanero020.png" alt="Kabanero 0.2.0"]
+Collections are built from https://developers.redhat.com/products/rhel/ubi/[Universal Base Images] and updated to stay current with performance improvements and security currency.  This ensures when applications created with Collections are deployed on OKD or OpenShift the entire stack is supportable with operating system libraries in each container. 
 
-Speaking of guides, you can also find new step-by-step instructions for getting the most out of Kabanero here: https://kabanero.io/guides/.
+Kabanero now provides an integration point in the OKD management console, making it easy for developers to find which collections are available to them along with a Tekton dashboard to see the pipelines ready for the collections.
 
-The Kabanero Foundation has introduced a collection management CLI that allows fine-grained control over collections, synchronizing collection updates.  An integration with Github allows your organization to leverage your existing team permissions to authenticate and authorize changes to the Kabanero Instance.  The 0.2.0 release provides CLI binaries for Linux, MacOS and Windows platforms.
+image::/img/blogs/Kabanero020.png[link="/img/blogs/Kabanero020.png" alt="Kabanero 0.2.0"]
 
-
-Understanding
-
-The Kabanero operator can install and manage the Kubernetes Application Navigator (kappnav) is a tool that extends the Kubernetes® console to provide display inspection, understanding, and navigation through the deployed resources that comprise an application.  Learn more here: https://kappnav.io/
+## Guides
+Guides are now available on the Kabanero website to help you to learn more about Kabanero. Guides provide step-by-step instructions with a real use case in mind to help you get started quickly. See https://kabanero.io/guides/
 
 
-Currency
+## Manage microservice composed applications
+Kabanero now integrates a new open source project called [kAppNav] (https://kappnav.io/) which is a Kubernetes Application Navigator that assists with managing microservice composed applications. This provides display, inspection, understanding, and navigation of the deployed resources that comprise an application. This is installed through a Kubernetes operator and included in the user experience.
 
-The default, best-practice collections are built from UBI images and have been updated to stay current with performance improvements and security currency.   We are rigorously evaluating the best releases of dependent projects, which provide currency and are proven to integrate to provide a well behaving foundation for microservice womb-to-tomb management.   (We could simply add this paragraph to every release of Kabanero collections, as we intend to continue to provide high-quality collections, CI-CD processes and microservice Management.)
+The https://github.com/kubernetes-sigs/application/blob/master/config/crds/app_v1beta1_application.yaml[Application Custom Resource Definition (CRD)] from the https://github.com/kubernetes-sigs/application[Kubernetes Application SIG] is used as the basis for describing applications.
 
-Try it!
+## Support scripts
+The Kabanero support scripts include a sample script that uninstalls Kabanero and must-gather scripts that collect important diagnostic data.
 
-If you haven’t given Kabanero a shot yet, you can get started here: https://kabanero.io/try-it/.
+## Kabanero operator, enhanced
+The Kabanero operator now includes a –targetNameSpaces configuration that defines a list of namespaces that help to manage Appsody application deployments with Kabanero using a controlled set of namespaces defined by the architect and operations roles. To simplify collection development, variable substitution is introduced to allow the same pipeline template to be used for multiple collections. This allows you to use one pipeline for multiple collections.
+
+As always you can, https://kabanero.io/try-it/[try it out].
