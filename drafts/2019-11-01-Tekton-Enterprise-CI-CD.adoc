@@ -16,37 +16,23 @@ blog_description: "Read about Tekton - a new open source project that provides a
 
 Accelerating application delivery is vital for today’s companies as they address market demands. The ability to create new applications quickly and then deploy, manage, and scale these applications is one of the key factors driving cloud adoption. As developers move to cloud, automation of end-to-end processes is a core component of success. This automation typically comes by embracing DevOps, and the adoption of continuous integration (CI) and continuous delivery (CD) as the key to this growth. CI and CD processes can build, deploy, and validate changes in a seamless and programmatic way, enabling developers to reliably integrate and quickly deploy new features in their applications.
 
-## Collection CLI
-The Collection CLI has been introduced with fine-grained control over collections and synchronizing collection updates.  With the Collection CLI, you can view the status of collections, temporarily deactivate a collection as well as synchronize curated-collection updates. This feature also assists the enterprise manage collections in a Collection Hub by leveraging team permissions in GitHub to authenticate and authorize for a specific Kabanero instances deployed in a Kubernetes cluster.
+CI systems typically integrate code changes by using an automated build and test process. This automated process gives developers the ability to integrate often and discover bugs early, resulting in software that is always ready to deploy. In systems where you deploy every change, you are practicing continuous deployment.  However, CD generally refers to continuous delivery, the practice of having processes in place that allow for frequent deployments, even if you don’t deploy every code change.
 
-## Collections 0.2.0
-Use the features in Kabanero collections to develop microservices and applications for the enterprise. These collections include enhancements for security, performance, and bug fixes.
+There are many existing CI/CD tools that developers use to build and/or deploy their applications. Many of these tools are ported to run on top of different cloud environments and provide integrations into cloud native platforms. While many of them provide similar CI/CD capability on the cloud, they aren’t born in the cloud and unable to take advantage of underlying cloud capability. They are not cloud native tools.
 
-* java-microprofile
-* java-spring-boot2
-* node-js-express
-* node-js-loopback
-* node-js
+What does it mean to be cloud native and why is it important? Cloud native tools are purpose-built for the cloud. They take advantage of access to instantly available compute and storage resources that can be adapted quickly to the needs of the tool. Cloud native tools also offer simplified maintenance, resiliency, and elasticity, which gives you the ability to scale resources as needed.
 
-Collections are built from https://developers.redhat.com/products/rhel/ubi/[Universal Base Images] and updated to stay current with performance improvements and security currency.  This ensures when applications created with Collections are deployed on OKD or OpenShift the entire stack is supportable with operating system libraries in each container. 
+Introducing Tekton, a new open source project that provides a framework for creating cloud native CI/CD pipelines. Tekton benefits from a robust community of contributors and provides a set of fundamental building blocks for creating a CI/CD environment. Tektonprovides a first-class Kubernetes integration, including custom resource definitions (CRDs) as a standard way to run end-to-end pipelines. 
 
-Kabanero now provides an integration point in the OKD management console, making it easy for developers to find which collections are available to them along with a Tekton dashboard to see the pipelines ready for the collections.
+Each Tekton pipeline is made up of a sequence of tasks. For example, tasks could include a Git clone, a build, a vulnerability scan, running tests, or deploying the application. These tasks can be as simple or complex as needed. Tasks are tied together to make up a pipeline and can be run sequentially, concurrently, or on different nodes. Developers can create new tasks and share them across their enterprise by putting task containers into a container registry and consuming these containers in Tekton Tasks. This basic use case shows how leveraging a cloud native approach can simplify tool distribution across CI/CD systems and have an instant worldwide distribution of this new tool. Teams no longer need to reinstall existing tools across all your build and test servers for build agents to use. With a cloud native approach, teams can use this distribution mechanism to deliver and update tools across the organization. 
 
-image::/img/blog/Kabanero020.png[link="/img/blogs/Kabanero020.png" alt="Kabanero 0.2.0"]
+An integrated CI/CD system also enables operations processes to be reliably automated. Operations activities like applying patches, security fixes, and maintenance can leverage the integrated CI system to provide updated containers for deployment.
 
-## Guides
-Guides are now available on the Kabanero website to help you to learn more about Kabanero. Guides provide step-by-step instructions with a real use case in mind to help you get started quickly. See https://kabanero.io/guides/[Kabanero Guides]
+A sample Tekton pipeline: 
 
+image::/img/blog/Tekton-Intro.png[link="/img/blogs/Tekton-Intro.png" alt="Tekton Intro"]
 
-## Manage microservice composed applications
-Kabanero now integrates a new open source project called https://kappnav.io/[kAppNav] which is a Kubernetes Application Navigator that assists with managing microservice composed applications. This provides display, inspection, understanding, and navigation of the deployed resources that comprise an application. This is installed through a Kubernetes operator and included in the user experience.
+While Tekton is still new, the community of innovators that are contributing to and using Tekton is growing. Through layered steps and tasks, Tekton pipelines give flexibility to enterprises for their continuous integration and delivery needs. Tekton pipelines also allow enterprises to meet their customer demands by quickly delivering vital application updates that satisfy enterprise-specific quality and security requirements. 
 
-The https://github.com/kubernetes-sigs/application/blob/master/config/crds/app_v1beta1_application.yaml[Application Custom Resource Definition (CRD)] from the https://github.com/kubernetes-sigs/application[Kubernetes Application SIG] is used as the basis for describing applications.
-
-## Support scripts
-The Kabanero support scripts include a sample script that uninstalls Kabanero and must-gather scripts that collect important diagnostic data.
-
-## Kabanero operator, enhanced
-The Kabanero operator now includes a –targetNameSpaces configuration that defines a list of namespaces that help to manage Appsody application deployments with Kabanero using a controlled set of namespaces defined by the architect and operations roles. To simplify collection development, variable substitution is introduced to allow the same pipeline template to be used for multiple collections. This allows you to use one pipeline for multiple collections.
-
-As always you can, https://kabanero.io/try-it/[try it out]!
+ 
+To see Tekton in action, go to the link:https://kabanero.io/[Kabanero website]. Kabanero brings together Knative, Istio, and Tekton, with Codewind, and Appsody. Together, these open source projects provide an end-to-end solution for you to build, deploy, and manage the lifecycle of Kubernetes-based applications. 
