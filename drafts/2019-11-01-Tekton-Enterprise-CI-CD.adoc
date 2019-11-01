@@ -32,6 +32,7 @@ A sample Tekton pipeline:
 
 image::/img/blog/Tekton-Intro.png[link="/img/blogs/Tekton-Intro.png" alt="Tekton Intro"]
 
+
 While Tekton is still new, the community of innovators that are contributing to and using Tekton is growing. Through layered steps and tasks, Tekton pipelines give flexibility to enterprises for their continuous integration and delivery needs. Tekton pipelines also allow enterprises to meet their customer demands by quickly delivering vital application updates that satisfy enterprise-specific quality and security requirements. 
 
  
