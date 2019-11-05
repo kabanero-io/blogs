@@ -32,7 +32,7 @@ An integrated CI/CD system also enables operations processes to be reliably auto
 
 == A sample Tekton pipeline
 
-image::/img/blog/Tekton-Intro.png[link="/img/blogs/Tekton-Intro.png" alt="Tekton Intro"]
+image::/img/blog/Tekton-Intro.png[link="/img/blog/Tekton-Intro.png" alt="Tekton Intro"]
 
 == Summary
 Through layered steps and tasks, Tekton pipelines give flexibility to enterprises for their continuous integration and delivery needs on Kubernetes. Tekton pipelines also allow enterprises to meet their customer demands by quickly delivering vital application updates that satisfy enterprise-specific quality and security requirements for cloud native applications. 
