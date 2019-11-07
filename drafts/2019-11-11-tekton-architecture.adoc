@@ -26,7 +26,9 @@ image::/img/example-tekton-pipeline.png[Example Pipeline]
 Tekton is a ‘cloud native’ build system, designed to run on Kubernetes and fit in naturally with existing Kubernetes mechanics. Tekton is implemented as a set of Kubernetes Custom Resource Definitions (CRDs), which is the standard Kubernetes extension mechanism. Tekton introduces several new CRDs including Task, Pipeline and PipelineRun. A PipelineRun represents a single running instance of a Pipeline. Creating a PipelineRun causes a single build to be started. As shown in Figure 2 a PipelineRun is responsible for creating a Pod for each of its Tasks, and as many containers within each Pod as it has Tasks. 
 
 [#img:pipeline-run-mapping]
+
 ."Tekton runs scripts in containers." Steps map to containers. Tasks map to Pods. PipelineRuns are Pipeline instances – like a single Travis build or Jenkins job. PipelineRuns manage their associated Pods. Pods often share a temporary filesystem backed by a PersistentVolume.
+
 image::/img/pipeline-run-mapping.png[Tekton mapping to Kubernetes primitives]
  
 
