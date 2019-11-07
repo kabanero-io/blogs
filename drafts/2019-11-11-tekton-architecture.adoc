@@ -20,11 +20,15 @@ Tekton’s basic building block is called a Task. This represents a discrete, se
 [#img-building-blocks] 
 .A Tekton Pipeline is an ordered set of Tasks. This is an example of how a Pipeline could be constructed.
 image::/img/example-tekton-pipeline.png[Example Pipeline]
+ 
 
 === Tekton is a set of Kubernetes Custom Resources
 Tekton is a ‘cloud native’ build system, designed to run on Kubernetes and fit in naturally with existing Kubernetes mechanics. Tekton is implemented as a set of Kubernetes Custom Resource Definitions (CRDs), which is the standard Kubernetes extension mechanism. Tekton introduces several new CRDs including Task, Pipeline and PipelineRun. A PipelineRun represents a single running instance of a Pipeline. Creating a PipelineRun causes a single build to be started. As shown in Figure 2 a PipelineRun is responsible for creating a Pod for each of its Tasks, and as many containers within each Pod as it has Tasks. 
 
-image::/img/pipeline-run-mapping.png[Figure 2: "Tekton runs scripts in containers." Steps map to containers. Tasks map to Pods. PipelineRuns are Pipeline instances – like a single Travis build or Jenkins job. PipelineRuns manage their associated Pods. Pods often share a temporary filesystem backed by a PersistentVolume.] 
+[#img:pipeline-run-mapping]
+."Tekton runs scripts in containers." Steps map to containers. Tasks map to Pods. PipelineRuns are Pipeline instances – like a single Travis build or Jenkins job. PipelineRuns manage their associated Pods. Pods often share a temporary filesystem backed by a PersistentVolume.
+image::/img/pipeline-run-mapping.png[Tekton mapping to Kubernetes primitives]
+ 
 
 We're often asked to compare and contrast Tekton with other CI/CD systems such as Jenkins and Travis. One short answer is that Tekton is currently optimised for building and deploying cloud-native, microservice-based applications compared to the more general-purpose nature of the older alternatives. Jenkins requires a file, generally called `/Jenkinsfile` in the root directory of a project that contains its build script. Similarly Travis looks for a file `/.travis.yml`. In this way each project tends towards having its own build logic - often with significant overlap with that in parallel projects. Tekton's use of Custom Resources means that a Pipeline must exist in a namespace before it can be used. It is possible to include a `/tekton` directory in each project, and to fetch and install that before each build. However Tekton nudges its users to centralise and standardise build logic, consolidated into a separate repository and managed under its own lifecycle. This standardisation can be beneficial when scaling up to larger numbers of microservices, many of which should share build logic that is identical but for a few substitutable parameters. 
 
@@ -43,7 +47,9 @@ This Pipeline clones a Git repository, builds an image from it and pushes that i
 == Building a DevOps Pipeline
 Tekton gives us the pieces that we need to build a useful DevOps pipeline. Figure 3 below shows the high level flows involved. We show a very simple Pipeline without all the linting, testing and image scanning involved in a real world implementation. 
 
-image::/img/basic-devops.png[Figure 3: High level overview of a simple DevOps pipeline]
+[#img:basic-devops]
+.High level overview of a simple DevOps pipeline
+image::/img/basic-devops.png[High level overview of a DevOps pipeline]
 
 In this example, Pipelines are initiated as a result of Git activity by a developer. See Weaveworks' excellent https://www.weave.works/blog/what-is-gitops-really[What Is GitOps Really?] article for more on why this model is increasingly popular. Figure 3 shows a 'webhook' initiating a Tekton Pipeline. Webhooks are outbound HTTP POST messages with a payload specific to the particular event provider provider. These payloads contain most of the information necessary to kick off a Tekton PipelineRun. We discuss webhooks in a bit more detail below.
 
@@ -57,9 +63,12 @@ Figure three raises some further questions:
 
 The Tekton https://github.com/tektoncd/dashboard[Dashboard] and https://github.com/tektoncd/triggers[Triggers] projects give some answers. The dashboard provides a web-based user interface for interacting with Tekton and viewing the logs from current and previous PipelineRuns. 
 
-image::/img/tekton-dashboard.png[Figure 4: Viewing a PipelineRun in the Tekton Dashboard]
+[#img:dashboard]
+.Viewing a PipelineRun in the Tekton Dashboard
+image::/img/tekton-dashboard.png[Tekton Dashboard]
 
-The Dashboard https://github.com/tektoncd/experimental/tree/master/webhooks-extension[Webhooks Extension] adds in support for setting up webhooks, and mapping them to Pipelines with the extra information - such as target namespace, target docker registry, annd service account settings that needs to be combined with the webhook payload in order to kick off a new PipelineRun. Finally, the Triggers project introduces a standard way to initiate PipelineRuns for specific initiating events, such as merging a pull request or committing code to a particular branch. Tekton Triggers will be covered in more detail in a future blog post. 
+
+The Dashboard https://github.com/tektoncd/experimental/tree/master/webhooks-extension[Webhooks Extension] adds in support for setting up webhooks, and mapping them to Pipelines with the extra information - such as target namespace, target docker registry, annd service account settings that needs to be combined with the webhook payload in order to kick off a new PipelineRun. Finally, the Triggers project introduces a standard way to initiate PipelineRuns from specific events, such as merging a pull request or committing code to a particular branch. Tekton Triggers will be covered in more detail in a future blog post. 
 
 == Summary
 We've given a high level overview of Tekton's architecture and design, and shown how it can be adopted into a modern DevOps pipeline. Our plan is for future articles in this series to more provide a more in-depth example, cover the dashboard, webhooks and Triggers, and to look at how the Kabanero project is using Tekton in an enterprise context, with support for the separation of roles and responsibilties between development, administration, and architecture, policy and governance. 
