@@ -12,7 +12,7 @@ blog_description: "It's all about the architecture"
 Mark Nuttall <https://github.com/mnuttall>
 
 == Introduction
-This post leads on from link:/publish/2019-11-05-Tekton-Enterprise-CI-CD.adoc[our previous article], ‘How Tekton can power your Enterprise’s continuous integration & continuous delivery.’ We go into more detail on how Tekton works, look at how it can be integrated into an end-to-end DevOps process and finally look forward to the following articles that will flesh out its use in an enterprise context. 
+This blog post is part of a series about Tekton, the cloud-native CI/CD engine that underpins Kabanero. It leads on from link:/publish/2019-11-05-Tekton-Enterprise-CI-CD.adoc[our previous article], ‘How Tekton can power your Enterprise’s continuous integration & continuous delivery.’ We go into more detail on how Tekton works, look at how it can be integrated into an end-to-end DevOps process and finally look forward to the following articles that will flesh out its use in an enterprise context. 
 
 == Building Blocks
 Tekton’s basic building block is called a Task. This represents a discrete, self-contained part of a process. An ordered set of Tasks is called a Pipeline. An example Pipeline is shown in Figure 1. This illustrates how a given Task may require several others to complete before it can proceed. A Task comprises one or more Steps: these are the individual commands to execute. Examples of many standard Tasks can be found today in the Tekton https://github.com/tektoncd/catalog[Catalog]. 
