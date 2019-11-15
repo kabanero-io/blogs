@@ -1,5 +1,5 @@
 # Contributing to the blog
-Create a pull request with the content of the blog post placed in the `drafts` folder using the following file naming scheme: `YYYY-MM-DD-post-title.extension`.  Blogs are written in [AsciiDoc](https://asciidoctor.org/docs/asciidoc-writers-guide/) format with a file extension of `.adoc`. In the blog post file the following front matter variables must be set:
+Create a pull request with the content of the blog post placed in the `drafts` folder using the following file naming scheme: `YYYY-MM-DD-post-title.adoc`.  Blogs are written in [AsciiDoc](https://asciidoctor.org/docs/asciidoc-writers-guide/) format with a file extension of `.adoc`. In the blog post file the following front matter variables must be set:
 - layout: post
 - title: `title of the blog post`
 - categories: blog
