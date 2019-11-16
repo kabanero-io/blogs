@@ -12,10 +12,10 @@ blog_description: "It's all about the architecture"
 Mark Nuttall <https://github.com/mnuttall>
 
 == Introduction
-This blog post is part of a series about Tekton, the cloud-native CI/CD engine that underpins Kabanero. It leads on from link:/publish/2019-11-05-Tekton-Enterprise-CI-CD.adoc[our previous article], ‘How Tekton can power your Enterprise’s continuous integration & continuous delivery.’ We go into more detail on how Tekton works, look at how it can be integrated into an end-to-end DevOps process and finally look forward to the following articles that will flesh out its use in an enterprise context. 
+This blog post is part of a series about Tekton, the Kubernetes-native CI/CD engine that underpins Kabanero. It leads on from link:https://kabanero.io/blog/2019/11/05/Tekton-Enterprise-CI-CD.html[our previous article], ‘How Tekton can power your Enterprise’s continuous integration & continuous delivery.’ We go into more detail on how Tekton works, look at how it can be integrated into an end-to-end DevOps process and finally look forward to the following articles that will flesh out its use in an enterprise context. 
 
 == Building Blocks
-Tekton’s basic building block is called a Task. This represents a discrete, self-contained part of a process. An ordered set of Tasks is called a Pipeline. An example Pipeline is shown in Figure 1. This illustrates how a given Task may require several others to complete before it can proceed. A Task comprises one or more Steps: these are the individual commands to execute. Examples of many standard Tasks can be found today in the Tekton https://github.com/tektoncd/catalog[Catalog]. 
+Tekton’s basic building blocks are called Steps and Tasks. A Task represents a discrete, self-contained part of a process. An ordered set of Tasks is called a Pipeline. An example Pipeline is shown in Figure 1. This illustrates how a given Task may require several others to complete before it can proceed. A Task comprises one or more Steps: these are the individual commands to execute. Examples of many standard Tasks can be found today in the Tekton https://github.com/tektoncd/catalog[Catalog]. 
 
 [#img-building-blocks] 
 .A Tekton Pipeline is an ordered set of Tasks. This is an example of how a Pipeline could be constructed.
@@ -23,7 +23,7 @@ image::/img/example-tekton-pipeline.png[Example Pipeline]
  
 
 === Tekton is a set of Kubernetes Custom Resources
-Tekton is a ‘cloud native’ build system, designed to run on Kubernetes and fit in naturally with existing Kubernetes mechanics. Tekton is implemented as a set of Kubernetes Custom Resource Definitions (CRDs), which is the standard Kubernetes extension mechanism. Tekton introduces several new CRDs including Task, Pipeline and PipelineRun. A PipelineRun represents a single running instance of a Pipeline. Creating a PipelineRun causes a single build to be started. As shown in Figure 2 a PipelineRun is responsible for creating a Pod for each of its Tasks, and as many containers within each Pod as it has Tasks. 
+Tekton is a ‘cloud native’ CI/CD system, designed to run on Kubernetes and fit in naturally with existing Kubernetes mechanics. Tekton is implemented as a set of Kubernetes Custom Resource Definitions (CRDs), which is the standard Kubernetes extension mechanism. Tekton introduces several new CRDs including Task, Pipeline and PipelineRun. A PipelineRun represents a single running instance of a Pipeline. Creating a PipelineRun causes a single build to be started. As shown in Figure 2 a PipelineRun is responsible for creating a Pod for each of its Tasks, and as many containers within each Pod as it has Tasks. 
 
 [#img:pipeline-run-mapping]
 
@@ -53,12 +53,12 @@ Tekton gives us the pieces that we need to build a useful DevOps pipeline. Figur
 .High level overview of a simple DevOps pipeline
 image::/img/basic-devops.png[High level overview of a DevOps pipeline]
 
-In this example, Pipelines are initiated as a result of Git activity by a developer. See Weaveworks' excellent https://www.weave.works/blog/what-is-gitops-really[What Is GitOps Really?] article for more on why this model is increasingly popular. Figure 3 shows a 'webhook' initiating a Tekton Pipeline. Webhooks are outbound HTTP POST messages with a payload specific to the particular event provider provider. These payloads contain most of the information necessary to kick off a Tekton PipelineRun. We discuss webhooks in a bit more detail below.
+In this example, Pipelines are initiated as a result of Git activity by a developer. See Weaveworks' excellent https://www.weave.works/blog/what-is-gitops-really[What Is GitOps Really?] article for more on why this model is increasingly popular. Figure 3 shows a 'webhook' initiating a Tekton Pipeline. Webhooks are outbound HTTP POST messages with a payload specific to the particular event provider. These payloads contain most of the information necessary to kick off a Tekton PipelineRun. We discuss webhooks in a bit more detail below.
 
 The flow in figure 3 shows the now-familiar process of building and publishing an image. The flow then goes on to show the new image being deployed to a target Kubernetes environment. This could be a dedicated namespace on the cluster where Tekton is running, or on one or more completely separate clusters. Deployment can occur immediately after build - for example, to a shared development or test environment - or may occur separately as a result of Git commits to a second repository governing the target deployment environment.
 
 === Webhooks, Triggers and logs 
-Figure three raises some further questions:
+Figure 3 raises some further questions:
 - How are webhooks established?
 - If webhook payloads contain 'most of the information necessary to kick off a Tekton PipelineRun', where does the rest come from?
 - How do we know that a Pipeline has run, and where are the logs?
