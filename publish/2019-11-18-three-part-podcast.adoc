@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Introducing a three part Kabanero podcast series"
+title: "Introducing a three part podcast series"
 categories: blog
 author: Nate Ziemann
 author_picture: https://avatars1.githubusercontent.com/u/28736793?s=400&v=4
@@ -10,66 +10,38 @@ seo-description: A three part series on Kabanero, an open source project that is
 blog_description: "A three part series on Kabanero, including an introduction to Kabanero, a systems architect view of Kabanero, and a developers view on the complexities of building apps and using containers in a big enterprise."
 ---
 
-== Part 1: An Introduction to Kabanero
+== Part 1: An Introduction
 
 Listen to an introduction into why we created Kabanero as an open source project, how we bring together developers, architects and operations teams, and the value across each persona seeking to adopt Kubernetes in a company today.  Pain points, relationships between open source project choices and between Kabanero and IBM Cloud Pak for Application are all discussed.
 
 Listen on: 
-https://play.google.com/music/m/Dehu3hj5twpb5zdlku2xn2g5uli?t=Nate_Ziemann__Kabaneroio-IBM_Developer_Podcast[Google,window=_blank] --- 
-https://www.stitcher.com/podcast/ibm-developer-podcast/e/65277837[Sticher,window=_blank] --- 
-https://share.transistor.fm/s/e2f8340a[iTunes,window=_blank] --- 
-https://open.spotify.com/episode/3nFaK3q4xqQReWf0uv9XRc[Spotify,window=_blank]
+https://play.google.com/music/m/Ipksympa22utfirheucgjc7cfma?t=IBM_Developer_Podcast[Google,window=_blank] --- 
+https://www.stitcher.com/s?fid=453079&refid=stpr[Sticher,window=_blank] --- 
+https://pcr.apple.com/id1478968669[iTunes,window=_blank] --- 
+https://open.spotify.com/show/0OuxR2DnmsPFY4oklhbZiV[Spotify,window=_blank]
 
 image::/img/blog/podcast-nate-ziemann.jpg[link="/img/blog/podcast-nate-ziemann.jpeg" alt="Open Source Kabanero featuring Nate Ziemann" height=350]
-
-In the first of a three-part series, Nate Ziemann introduces Kabanero, an open source project that integrates various open technologies in a way that allows developers, architects and operators to work together to develop cloud-native apps with Kubernetes faster with consistency at scale. He highlights traditional pain points and obstacles that developers face when building with containers and details how Kabanero addresses those problems. The relationship between the open project choices and between Kabanero and IBM Cloud Pak for Applications is also discussed.
-
-Links mentioned in this episode:
-
-* https://kabanero.io/[Kabanero]
-* https://developer.ibm.com/components/cloud-pak-for-applications/[IBM Cloud Pak for Applications]
-* https://appsody.dev[Appsody]
-* https://www.eclipse.org/codewind/[Codewind]
-* https://twitter.com/nate_zman[Nate Ziemann on Twitter]
 
 == Part 2: Kabanero for the systems architect
 
 Chris Bailey shares the systems architect’s  perspective and how they can build technology standards and policies into the applications their developers are creating.  Learn about how this approach can provide consistency at scale all while enabling developers to focus more on code and less on learning Kubernetes and infrastructure in a cloud-native world.
 
 Listen on: 
-https://play.google.com/music/m/Dqxhw64sjb4tyl4yclkam55l5li?t=Chris_Bailey__Kabaneroio_for_the_Systems_Architect-IBM_Developer_Podcast[Google,window=_blank] --- 
-https://www.stitcher.com/podcast/ibm-developer-podcast/e/65277834[Sticher,window=_blank] --- 
-https://share.transistor.fm/s/047dcb86[iTunes,window=_blank] --- 
-https://open.spotify.com/episode/0mupxx0jZ6593o7nREoukK[Spotify,window=_blank]
+https://play.google.com/music/m/Ipksympa22utfirheucgjc7cfma?t=IBM_Developer_Podcast[Google,window=_blank] --- 
+https://www.stitcher.com/s?fid=453079&refid=stpr[Sticher,window=_blank] --- 
+https://pcr.apple.com/id1478968669[iTunes,window=_blank] --- 
+https://open.spotify.com/show/0OuxR2DnmsPFY4oklhbZiV[Spotify,window=_blank]
 
 image::/img/blog/podcast-chris-bailey.jpg[link="/img/blog/podcast-chris-bailey.jpeg" alt="Open Source Kabanero featuring Chris Bailey" height=350]
-
-In this episode, Chris Bailey talks about how systems architects can use the Kabanero open source project to seamlessly build technology standards and policies into the applications their developers are creating. Kabanero brings together foundational open source technologies into a modern microservices-based framework that enables developers, architects, and operation admins to build apps for container platforms from the same starting point. The technology speeds development of applications built for Kubernetes while meeting the technology standards and policies your company defines.
-
-Links mentioned in this episode:
-
-* https://kabanero.io/[Kabanero]
-* https://appsody.dev[Appsody]
-* https://www.eclipse.org/codewind/[Codewind]
-* https://twitter.com/Chris__Bailey[Chris Bailey on Twitter]
 
 == Part 3: Appsody & cloud-native development
 
 Erin Schnabel shares a developer’s perspective on the complexities of building apps and using containers in a big enterprise making the transition from Java EE and traditional Java application servers to containers, Kubernetes and DevOps.
 
 Listen on: 
-https://play.google.com/music/m/Dxfu5543mjlbymesruns7dnmnca?t=Erin_Schnabel__Appsody-IBM_Developer_Podcast[Google,window=_blank] --- 
-https://www.stitcher.com/podcast/ibm-developer-podcast/e/65277836[Sticher,window=_blank] --- 
-https://share.transistor.fm/s/ee304a5c[iTunes,window=_blank] --- 
-https://open.spotify.com/episode/6rPQMRVCtMptLsuB3y4XU2[Spotify,window=_blank]
+https://play.google.com/music/m/Ipksympa22utfirheucgjc7cfma?t=IBM_Developer_Podcast[Google,window=_blank] --- 
+https://www.stitcher.com/s?fid=453079&refid=stpr[Sticher,window=_blank] --- 
+https://pcr.apple.com/id1478968669[iTunes,window=_blank] --- 
+https://open.spotify.com/show/0OuxR2DnmsPFY4oklhbZiV[Spotify,window=_blank]
 
 image::/img/blog/podcast-erin-schnabel.jpg[link="/img/blog/podcast-erin-schnabel.jpeg" alt="Open Source Kabanero featuring Erin Schnabel" height=350]
-
-In this episode, Erin Schnabel talks about the complexity of building applications and using containers in a big enterprise. She introduces new open source projects, Appsody and Kabanero, which offer configurable technology stacks and collections that you can use to provide consistency and standardization for application development.
-
-Links mentioned in this episode:
-
-* https://kabanero.io/[Kabanero]
-* https://appsody.dev[Appsody]
-* https://www.eclipse.org/codewind/[Codewind]
-* https://twitter.com/ebullientworks[Erin Schnabel on Twitter]
