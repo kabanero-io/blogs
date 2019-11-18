@@ -22,6 +22,8 @@ https://open.spotify.com/show/0OuxR2DnmsPFY4oklhbZiV[Spotify,window=_blank]
 
 image::/img/blog/podcast-nate-ziemann.jpg[link="/img/blog/podcast-nate-ziemann.jpeg" alt="Open Source Kabanero featuring Nate Ziemann" height=350]
 
+---
+
 == Part 2: Kabanero for the systems architect
 
 Chris Bailey shares the systems architect’s  perspective and how they can build technology standards and policies into the applications their developers are creating.  Learn about how this approach can provide consistency at scale all while enabling developers to focus more on code and less on learning Kubernetes and infrastructure in a cloud-native world.
@@ -33,6 +35,8 @@ https://pcr.apple.com/id1478968669[iTunes,window=_blank] ---
 https://open.spotify.com/show/0OuxR2DnmsPFY4oklhbZiV[Spotify,window=_blank]
 
 image::/img/blog/podcast-chris-bailey.jpg[link="/img/blog/podcast-chris-bailey.jpeg" alt="Open Source Kabanero featuring Chris Bailey" height=350]
+
+---
 
 == Part 3: Appsody & cloud-native development
 
