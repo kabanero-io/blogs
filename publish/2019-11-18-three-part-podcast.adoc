@@ -20,7 +20,7 @@ https://www.stitcher.com/s?fid=453079&refid=stpr[Sticher,window=_blank] ---
 https://pcr.apple.com/id1478968669[iTunes,window=_blank] --- 
 https://open.spotify.com/show/0OuxR2DnmsPFY4oklhbZiV[Spotify,window=_blank]
 
-image::/img/blog/podcast-nate-ziemann.jpg[link="/img/blog/podcast-nate-ziemann.jpeg" alt="Open Source Kabanero featuring Nate Ziemann" height=350]
+image::/img/blog/podcast-nate-ziemann.jpg[link="/img/blog/podcast-nate-ziemann.jpg" alt="Open Source Kabanero featuring Nate Ziemann"]
 
 ---
 
@@ -34,7 +34,7 @@ https://www.stitcher.com/s?fid=453079&refid=stpr[Sticher,window=_blank] ---
 https://pcr.apple.com/id1478968669[iTunes,window=_blank] --- 
 https://open.spotify.com/show/0OuxR2DnmsPFY4oklhbZiV[Spotify,window=_blank]
 
-image::/img/blog/podcast-chris-bailey.jpg[link="/img/blog/podcast-chris-bailey.jpeg" alt="Open Source Kabanero featuring Chris Bailey" height=350]
+image::/img/blog/podcast-chris-bailey.jpg[link="/img/blog/podcast-chris-bailey.jpg" alt="Open Source Kabanero featuring Chris Bailey"]
 
 ---
 
@@ -48,4 +48,4 @@ https://www.stitcher.com/s?fid=453079&refid=stpr[Sticher,window=_blank] ---
 https://pcr.apple.com/id1478968669[iTunes,window=_blank] --- 
 https://open.spotify.com/show/0OuxR2DnmsPFY4oklhbZiV[Spotify,window=_blank]
 
-image::/img/blog/podcast-erin-schnabel.jpg[link="/img/blog/podcast-erin-schnabel.jpeg" alt="Open Source Kabanero featuring Erin Schnabel" height=350]
+image::/img/blog/podcast-erin-schnabel.jpg[link="/img/blog/podcast-erin-schnabel.jpg" alt="Open Source Kabanero featuring Erin Schnabel"]
