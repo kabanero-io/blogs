@@ -16,16 +16,16 @@ blog_description: "See what is hot in Kabanero v0.3.0."
 
 Today you can get your hands on the next monthly release of Kabanero, v0.3.0.  Check out all the details on everything new below include a shift from OKD 3.11 to OpenShift 4.2 and an integrated Hosted IDE.  
 
+Hosted IDE with Eclipse Che and Eclipse Codewind:
+Expanding on microservice development scenarios, Kabanero can now establish an Eclipse Che environment. Developers can remotely leverage Codewind in Che, hosted in the same Kubernetes cluster as the Kabanero Instance, to develop microservices. This capability reduces the computing resources that are needed for individual developers.
+
 OpenShift 4.2 support:
 Kabanero is moving very rapidly. To accommodate the desired rate of innovation, especially around Kubernetes operators, we decided to move our foundation from OKD 3.11 to OpenShift Container Platform 4.2.  While our community is committed to being open, the OKD distribution is currently behind the commercial distribution.  Once OKD 4.x is available we will shift our recommendation for trying Kabanero by deploying on OKD. 
 
 Foundational project updates:
 In addition to the move to OCP 4.2, we’ve upgraded the foundational infrastructure to leverage Red Hat ServiceMesh and Serverless features. Tekton also gets a refresh, which brings us to a special consideration -- the pipeline syntax of Kabanero Collections is changed, more detail about the pipeline changes are in the https://github.com/tektoncd/pipeline/releases/tag/v0.7.0[tektoncd 0.7.0 release, window=_blank]. 
 
-Hosted IDE with Eclipse Che and Eclipse Codewind:
-Expanding on microservice development scenarios, Kabanero can now establish an Eclipse Che environment. Developers can remotely leverage Codewind in Che, hosted in the same Kubernetes cluster as the Kabanero Instance, to develop microservices. This capability reduces the computing resources that are needed for individual developers.
-
-Pipeline security focused tasks:
+Pipeline security tasks:
 Speaking of pipelines, we’ve added sample tasks for container scanning, which improve the quality of your microservices; and container signing, which helps you trust the containers that are leveraged to compose your microservice applications.
 
 Collection 0.3.0
