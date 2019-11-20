@@ -29,7 +29,7 @@ Pipeline security tasks:
 Speaking of pipelines, we’ve added sample tasks for container scanning, which improve the quality of your microservices; and container signing, which helps you trust the containers that are leveraged to compose your microservice applications.
 
 Collection 0.3.0
-We’ve refreshed each of the Kabanero Collections to deliver the latest maintenance and security fixes.
+We’ve refreshed each of the Kabanero Collections to deliver the latest maintenance and security fixes.  In additional, all  collections provided have been tested to successfully deploy as a Knative service providing ability to scale to zero.  This is parameter enabled in the appsody-config and must be configured when using pipelines.
 
 New DevOps prototype
 Additionally, we’ve begun our journey of teaching Kabanero to respond to key microservice lifecycle events. New prototype trigger support is checked into the 0.3.0 repository that demonstrates the community direction to react to specific GitHub events and drive concrete pipelines based on those events.
