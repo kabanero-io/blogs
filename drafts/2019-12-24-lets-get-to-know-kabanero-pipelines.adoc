@@ -1,0 +1,20 @@
+---
+layout: post
+title: "Let's get to know Kabanero Pipelines"
+categories: blog
+author_picture: https://avatars1.githubusercontent.com/u/30604461
+author_github: https://github.com/dewan-ahmed
+seo-title: Let's get to know Kabanero Pipelines
+seo-description: This is a blog which provides an overview of Kabanero Pipelines. First half of the blog covers Kabanero Pipelines architecture and components. End to end flow of a working pipeline is discussed in the latter half.
+blog_description: This is a blog which provides an overview of Kabanero Pipelines. First half of the blog covers Kabanero Pipelines architecture and components. End to end flow of a working pipeline is discussed in the latter half.
+---
+Why do we need pipelines? The answer is simple - to move stuff. Whether its water sitting in reservoir or code sitting in your local machine; they're not useful to customers. We need efficient pipeline mechanism to move water (or code) and bring to your household. For software delivery, a new revolution has started after the birth and widespread of Kubernetes. Developers are no longer relying on a single Jenkins instance with hundreds of plug-ins loaded. Rather, they're opting for modular cloud-native CI/CD engines which provide reusable pieces of pipeline. Kabanero Pipelines is based on link:https://github.com/tektoncd/pipeline/tree/master/docs#usage[Tekton Pipelines] which is a Kubernetes-native CI/CD engine. 
+
+== Components of Kabanero Pipelines
+
+Each Kabanero collection contains  a set of default tasks and pipelines that are created when the collection is built. A Kabanero task (usually) has one particular objective e.g. to build the project or to push the image etc. A Kabanero Pipeline, on the other hand, is consists of multiple tasks; to support a more complex and end-to-end scenario. The collections build process copies the task and pipeline files from link:https://github.com/kabanero-io/collections/tree/master/incubator/common/pipelines/default[the collections repo]. If you are building a new collection, the default tasks and pipelines are automatically pulled into your collections repo. If you want to customize the default tasks or pipelines to meet your needs, you can choose to apply your changes either to all collections or to a specific collection.  
+
+
+== Process of running your first Kabanero Pipeline
+
+While there are two ways of running your Kabanero Pipeline, link:https://github.com/tektoncd/experimental/blob/master/webhooks-extension/docs/GettingStarted.md[using Automated Webhooks] is the preferred one. link:https://github.com/kabanero-io/draft-guide-working-with-pipelines/blob/master/pipelines.adoc[This guide] takes you step by step on creating and running your Kabanero Pipeline. link:https://github.com/tektoncd/dashboard[Tekton Dashboard] makes it easy to configure your pipelines as well as see them in action with detailed logs. For more news and releases on Kabanero Pipelines, follow our link:https://twitter.com/Kabaneroio[social media channels]. 
