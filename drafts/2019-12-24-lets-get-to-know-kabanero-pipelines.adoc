@@ -17,4 +17,73 @@ Each Kabanero collection contains  a set of default tasks and pipelines that are
 
 == Process of running your first Kabanero Pipeline
 
-While there are two ways of running your Kabanero Pipeline, link:https://github.com/tektoncd/experimental/blob/master/webhooks-extension/docs/GettingStarted.md[using Automated Webhooks] is the preferred one. link:https://github.com/kabanero-io/draft-guide-working-with-pipelines/blob/master/pipelines.adoc[This guide] takes you step by step on creating and running your Kabanero Pipeline. link:https://github.com/tektoncd/dashboard[Tekton Dashboard] makes it easy to configure your pipelines as well as see them in action with detailed logs. For more news and releases on Kabanero Pipelines, follow our link:https://twitter.com/Kabaneroio[social media channels]. 
+While there are two ways of running your Kabanero Pipeline, link:https://github.com/tektoncd/experimental/blob/master/webhooks-extension/docs/GettingStarted.md[using Automated Webhooks] is the preferred one. 
+
+To bein with, you'll need to have link:https://github.com/kabanero-io/kabanero-foundation[Kabanero foundation installed] on Red Hat Origin Community Distribution of Kubernetes (OKD) or OpenShift Container Platform (OCP) cluster. link:https://github.com/kabanero-io/kabanero-pipelines[create a persistent volume], create secrets to pull from git repo and push to docker registry link:https://github.com/kabanero-io/kabanero-pipelines[following this link] and finally, execute pipelines using linl:https://github.com/tektoncd/experimental/blob/master/webhooks-extension/docs/GettingStarted.md[Tekton Dashboard Webhook Extension].
+
+== Disection of a pipeline.yaml file
+
+Following is the yaml definition of an end-to-end Kabanero Pipeline that builds, pushes and deployes and application. Let's inspect the parts that make it.
+
+----
+#Kabanero! on activate substitute CollectionId for text 'CollectionId'
+apiVersion: tekton.dev/v1alpha1
+kind: Pipeline
+metadata:
+  name: CollectionId-build-push-deploy-pipeline
+spec:
+  params:
+  - name: event-headers
+    type: string
+    description: "The event headers"
+  resources:
+  - name: git-source
+    type: git
+  - name: docker-image
+    type: image
+  tasks:
+  - name: build-push-deploy-task
+    taskRef:
+      name: CollectionId-build-push-deploy-task
+    resources:
+      inputs:
+      - name: git-source
+        resource: git-source
+      outputs:
+      - name: docker-image
+        resource: docker-image
+  - name: image-scan-task
+    taskRef:
+      name: CollectionId-image-scan-task
+    runAfter: [build-push-deploy-task]
+    resources:
+      inputs:
+      - name: git-source
+        resource: git-source
+      - name: docker-image
+        resource: docker-image
+----
+
+As Kabanero Pipelines are based on Tekton resources, the *apiVersion* reflects to that of Tekton and *kind* points to a Kubernetes Custom  Resource Definition (CRD) of type Pipeline. *Metadata* tags the the unique name of this resource. What interestes us is *spec* which contains *params* (to inject various parameters), *resources* (to indicate the source and destination resources the pipeline will use) and *tasks* that is made up of the most basic building blocks of pipelines. This pipeline uses a git-source to fetch the application code and a docker registry to push the image built from the source. This is defined under *resources*. Specifics of those resources are found under each *tasks*. 
+
+== Monitoring your pipeline
+
+You have three ways to monitor your pipelines:
+
+. OKD/OpenShift console
+. Command line
+. Tekton dashboard
+
+To check status of your pipelines from OKD/OpenShift console, log in from *developer* perspective and click on *Pipelines*:
+
+image::/img/blog/kabanero-pipelines.jpg[link="/img/blog/kabanero-pipelines.jpg.jpg" alt="Monitoring your Kabanero Pipelines from "]
+
+To check pipeline run status from the Tekton dashboard, login to the Tekton Dashboard and click *Pipeline runs* in the sidebar menu. Find your pipeline run in the list and click it to check the status and find logs. You can see logs and status of each step and task.
+
+You can also monitor pipeline run status from the command line. Enter the following command in the terminal:
+----
+oc get pipelineruns
+oc -n kabanero describe pipelinerun.tekton.dev/<pipeline-run-name>
+----
+
+If you're looking to troubleshoot, refer to link:https://github.com/kabanero-io/kabanero-pipelines/blob/master/Troubleshooting.md[Kabanero Pipelines Troubleshooting Guide].
