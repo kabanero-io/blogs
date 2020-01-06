@@ -1,29 +1,28 @@
 ---
 layout: post
-title: "Let's get to know Kabanero Pipelines"
+title: "Get to know Kabanero Pipelines"
 categories: blog
 author_picture: https://avatars1.githubusercontent.com/u/30604461
 author_github: https://github.com/dewan-ahmed
-seo-title: Let's get to know Kabanero Pipelines
-seo-description: This is a blog which provides an overview of Kabanero Pipelines. First half of the blog covers Kabanero Pipelines architecture and components. End to end flow of a working pipeline is discussed in the latter half.
-blog_description: This is a blog which provides an overview of Kabanero Pipelines. First half of the blog covers Kabanero Pipelines architecture and components. End to end flow of a working pipeline is discussed in the latter half.
+seo-title: Get to know Kabanero Pipelines
+seo-description: This blog provides an overview of Kabanero Pipelines. Learn about the architecture and components of Kabanero Pipelines and the end-to-end flow of a working pipeline.
+blog_description: This blog provides an overview of Kabanero Pipelines. Learn about the architecture and components of Kabanero Pipelines and the end-to-end flow of a working pipeline.
 ---
-Why do we need pipelines? The answer is simple - to move stuff. Whether its water sitting in reservoir or code sitting in your local machine; they're not useful to customers. We need efficient pipeline mechanism to move water (or code) and bring to your household. For software delivery, a new revolution has started after the birth and widespread of Kubernetes. Developers are no longer relying on a single Jenkins instance with hundreds of plug-ins loaded. Rather, they're opting for modular cloud-native CI/CD engines which provide reusable pieces of pipeline. Kabanero Pipelines is based on link:https://github.com/tektoncd/pipeline/tree/master/docs#usage[Tekton Pipelines] which is a Kubernetes-native CI/CD engine. 
+Why do we need pipelines? The answer is simple - to move things from one place to another. Water that sits in a reservoir isn't usable in the household, just as code that sits on your local computer isn't useful to your potential audience. Pipeline mechanisms provide the infrastructure to move things, whether it's water or code, to benefit users. In regard to software delivery, a revolution started after the birth and growth of Kubernetes. Developers no longer rely on a single Jenkins instance with hundreds of plug-ins. Rather, they opt for modular, cloud-native CI/CD engines that provide reusable pieces of pipeline. Kabanero Pipelines is based on link:https://github.com/tektoncd/pipeline/tree/master/docs#usage[Tekton Pipelines], which is a Kubernetes-native CI/CD engine.
 
 == Components of Kabanero Pipelines
 
-Each Kabanero collection contains  a set of default tasks and pipelines that are created when the collection is built. A Kabanero task (usually) has one particular objective e.g. to build the project or to push the image etc. A Kabanero Pipeline, on the other hand, is consists of multiple tasks; to support a more complex and end-to-end scenario. The collections build process copies the task and pipeline files from link:https://github.com/kabanero-io/collections/tree/master/incubator/common/pipelines/default[the collections repo]. If you are building a new collection, the default tasks and pipelines are automatically pulled into your collections repo. If you want to customize the default tasks or pipelines to meet your needs, you can choose to apply your changes either to all collections or to a specific collection.  
+Each Kabanero Collection contains a set of default tasks and pipelines that are created when the collection is built. A Kabanero task usually has one objective. For example, a Kabanero task might build the project or push the image. Alternatively, a Kabanero Pipeline consists of multiple tasks to support a more complex end-to-end scenario. The collection's build process copies the task and pipeline files from the link:https://github.com/kabanero-io/collections/tree/master/incubator/common/pipelines/default[collections repo]. If you are building a new collection, the default tasks and pipelines are automatically pulled into your collections repo. If you want to customize the default tasks or pipelines to meet your needs, you can choose to apply your changes either to all collections or to a specific collection.
 
+== Running your first Kabanero Pipeline
 
-== Process of running your first Kabanero Pipeline
+While there are two ways to run your Kabanero Pipeline, it is preferable to use link:https://github.com/tektoncd/experimental/blob/master/webhooks-extension/docs/GettingStarted.md[automated webhooks].
 
-While there are two ways of running your Kabanero Pipeline, link:https://github.com/tektoncd/experimental/blob/master/webhooks-extension/docs/GettingStarted.md[using Automated Webhooks] is the preferred one. 
+To begin, link:https://github.com/kabanero-io/kabanero-foundation[Kabanero Foundation] needs to be installed on a Red Hat Origin Community Distribution of Kubernetes (OKD) or an OpenShift Container Platform (OCP) cluster. Next, follow the steps in the link:https://github.com/kabanero-io/kabanero-pipelines[Kabanero Pipelines documentation] to create a persistent volume, create secrets to pull from your Git repo, and push to a Docker registry. Finally, run your pipelines by using the link:https://github.com/tektoncd/experimental/blob/master/webhooks-extension/docs/GettingStarted.md[Tekton Dashboard Webhook Extension].
 
-To begin with, you'll need to have link:https://github.com/kabanero-io/kabanero-foundation[Kabanero foundation] installed on Red Hat Origin Community Distribution of Kubernetes (OKD) or OpenShift Container Platform (OCP) cluster, link:https://github.com/kabanero-io/kabanero-pipelines[create a persistent volume], create secrets to pull from git repo and push to docker registry link:https://github.com/kabanero-io/kabanero-pipelines[following this link] and finally, execute pipelines using link:https://github.com/tektoncd/experimental/blob/master/webhooks-extension/docs/GettingStarted.md[Tekton Dashboard Webhook Extension].
+== Dissecting a `pipeline.yaml` file
 
-== Disection of a pipeline.yaml file
-
-Following is the yaml definition of an end-to-end Kabanero Pipeline that builds, pushes and deployes and application. Let's inspect the parts that make it.
+The following file is the YAML definition of an end-to-end Kabanero Pipeline that builds, pushes, and deploys an application:
 
 ----
 #Kabanero! on activate substitute CollectionId for text 'CollectionId'
@@ -64,26 +63,26 @@ spec:
         resource: docker-image
 ----
 
-As Kabanero Pipelines are based on Tekton resources, the *apiVersion* reflects to that of Tekton and *kind* points to a Kubernetes Custom  Resource Definition (CRD) of type Pipeline. *Metadata* tags the unique name of this resource. What interestes us is *spec* which contains *params* (to inject various parameters), *resources* (to indicate the source and destination resources the pipeline will use) and *tasks* that is made up of the most basic building blocks of pipelines. This pipeline uses a git-source to fetch the application code and a docker registry to push the image built from the source. This is defined under *resources*. Specifics of those resources are found under each *tasks*. 
+Because Kabanero Pipelines are based on Tekton resources, the *apiVersion* attribute reflects the API version of Tekton. The *kind* attribute points to `Pipeline` as the Kubernetes Custom Resource Definition (CRD) type. The *metadata* attribute tags the unique name of this resource. The *spec* attribute contains the *params*, *resources*, and *tasks* attributes. *params* injects parameters, *resources* indicates the source and destination resources that the pipeline uses, and *tasks* is made up of the basic building blocks of pipelines. This pipeline uses a `git-source` to fetch the application code and a Docker registry to push the image that is built from the source. These attributes are defined under *resources*. Specifics of each resource are found under each *task*. 
 
 == Monitoring your pipeline
 
-You have three ways to monitor your pipelines:
+There are three ways to monitor your pipelines:
 
 . OKD/OpenShift console
+. Tekton Dashboard
 . Command line
-. Tekton dashboard
 
-To check status of your pipelines from OKD/OpenShift console, log in from *developer* perspective and click on *Pipelines*:
+To check status of your pipelines from an OKD/OpenShift console, log in from the *developer* perspective and click *Pipelines*:
 
 image::/img/blog/kabanero-pipelines.jpg[link="/img/blog/kabanero-pipelines.jpg.jpg" alt="Monitoring your Kabanero Pipelines from "]
 
-To check pipeline run status from the Tekton dashboard, login to the Tekton Dashboard and click *Pipeline runs* in the sidebar menu. Find your pipeline run in the list and click it to check the status and find logs. You can see logs and status of each step and task.
+To check pipeline run status from the Tekton Dashboard, login to the Tekton Dashboard and click *Pipeline runs* in the sidebar menu. Find your pipeline run in the list and click it to check the status and find logs. You can see the logs and status of each step and task.
 
-You can also monitor pipeline run status from the command line. Enter the following command in the terminal:
+You can also monitor pipeline run status by running the following commands from the command line:
 ----
 oc get pipelineruns
 oc -n kabanero describe pipelinerun.tekton.dev/<pipeline-run-name>
 ----
 
-If you're looking to troubleshoot, refer to link:https://github.com/kabanero-io/kabanero-pipelines/blob/master/Troubleshooting.md[Kabanero Pipelines Troubleshooting Guide].
+If you need to troubleshoot, go to the link:https://github.com/kabanero-io/kabanero-pipelines/blob/master/Troubleshooting.md[Kabanero Pipelines Troubleshooting Guide].
