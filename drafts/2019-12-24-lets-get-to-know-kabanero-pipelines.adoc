@@ -19,7 +19,7 @@ Each Kabanero collection contains  a set of default tasks and pipelines that are
 
 While there are two ways of running your Kabanero Pipeline, link:https://github.com/tektoncd/experimental/blob/master/webhooks-extension/docs/GettingStarted.md[using Automated Webhooks] is the preferred one. 
 
-To begin with, you'll need to have link:https://github.com/kabanero-io/kabanero-foundation[Kabanero foundation] on Red Hat Origin Community Distribution of Kubernetes (OKD) or OpenShift Container Platform (OCP) cluster, link:https://github.com/kabanero-io/kabanero-pipelines[create a persistent volume], create secrets to pull from git repo and push to docker registry link:https://github.com/kabanero-io/kabanero-pipelines[following this link] and finally, execute pipelines using link:https://github.com/tektoncd/experimental/blob/master/webhooks-extension/docs/GettingStarted.md[Tekton Dashboard Webhook Extension].
+To begin with, you'll need to have link:https://github.com/kabanero-io/kabanero-foundation[Kabanero foundation] installed on Red Hat Origin Community Distribution of Kubernetes (OKD) or OpenShift Container Platform (OCP) cluster, link:https://github.com/kabanero-io/kabanero-pipelines[create a persistent volume], create secrets to pull from git repo and push to docker registry link:https://github.com/kabanero-io/kabanero-pipelines[following this link] and finally, execute pipelines using link:https://github.com/tektoncd/experimental/blob/master/webhooks-extension/docs/GettingStarted.md[Tekton Dashboard Webhook Extension].
 
 == Disection of a pipeline.yaml file
 
