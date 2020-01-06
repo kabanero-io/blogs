@@ -19,7 +19,7 @@ Each Kabanero collection contains  a set of default tasks and pipelines that are
 
 While there are two ways of running your Kabanero Pipeline, link:https://github.com/tektoncd/experimental/blob/master/webhooks-extension/docs/GettingStarted.md[using Automated Webhooks] is the preferred one. 
 
-To bein with, you'll need to have link:https://github.com/kabanero-io/kabanero-foundation[Kabanero foundation installed] on Red Hat Origin Community Distribution of Kubernetes (OKD) or OpenShift Container Platform (OCP) cluster. link:https://github.com/kabanero-io/kabanero-pipelines[create a persistent volume], create secrets to pull from git repo and push to docker registry link:https://github.com/kabanero-io/kabanero-pipelines[following this link] and finally, execute pipelines using linl:https://github.com/tektoncd/experimental/blob/master/webhooks-extension/docs/GettingStarted.md[Tekton Dashboard Webhook Extension].
+To begin with, you'll need to have link:https://github.com/kabanero-io/kabanero-foundation[Kabanero foundation] on Red Hat Origin Community Distribution of Kubernetes (OKD) or OpenShift Container Platform (OCP) cluster, link:https://github.com/kabanero-io/kabanero-pipelines[create a persistent volume], create secrets to pull from git repo and push to docker registry link:https://github.com/kabanero-io/kabanero-pipelines[following this link] and finally, execute pipelines using link:https://github.com/tektoncd/experimental/blob/master/webhooks-extension/docs/GettingStarted.md[Tekton Dashboard Webhook Extension].
 
 == Disection of a pipeline.yaml file
 
@@ -64,7 +64,7 @@ spec:
         resource: docker-image
 ----
 
-As Kabanero Pipelines are based on Tekton resources, the *apiVersion* reflects to that of Tekton and *kind* points to a Kubernetes Custom  Resource Definition (CRD) of type Pipeline. *Metadata* tags the the unique name of this resource. What interestes us is *spec* which contains *params* (to inject various parameters), *resources* (to indicate the source and destination resources the pipeline will use) and *tasks* that is made up of the most basic building blocks of pipelines. This pipeline uses a git-source to fetch the application code and a docker registry to push the image built from the source. This is defined under *resources*. Specifics of those resources are found under each *tasks*. 
+As Kabanero Pipelines are based on Tekton resources, the *apiVersion* reflects to that of Tekton and *kind* points to a Kubernetes Custom  Resource Definition (CRD) of type Pipeline. *Metadata* tags the unique name of this resource. What interestes us is *spec* which contains *params* (to inject various parameters), *resources* (to indicate the source and destination resources the pipeline will use) and *tasks* that is made up of the most basic building blocks of pipelines. This pipeline uses a git-source to fetch the application code and a docker registry to push the image built from the source. This is defined under *resources*. Specifics of those resources are found under each *tasks*. 
 
 == Monitoring your pipeline
 
