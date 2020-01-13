@@ -32,7 +32,7 @@ Collections are built from https://developers.redhat.com/products/rhel/ubi/[Univ
 
 Kabanero now provides an integration point in the OKD management console, making it easy for developers to find which collections are available to them along with a Tekton dashboard to see the pipelines ready for the collections.
 
-image::/img/blog/Kabanero020.png[link="/img/blogs/Kabanero020.png" alt="Kabanero 0.2.0"]
+image::/img/blog/Kabanero020.png[link="/img/blog/Kabanero020.png" alt="Kabanero 0.2.0"]
 
 ## Guides
 Guides are now available on the Kabanero website to help you to learn more about Kabanero. Guides provide step-by-step instructions with a real use case in mind to help you get started quickly. See https://kabanero.io/guides/[Kabanero Guides]
