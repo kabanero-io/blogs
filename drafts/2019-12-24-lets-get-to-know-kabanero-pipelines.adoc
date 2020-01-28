@@ -85,4 +85,4 @@ oc get pipelineruns
 oc -n kabanero describe pipelinerun.tekton.dev/<pipeline-run-name>
 ----
 
-If you need to troubleshoot, go to the link:https://github.com/kabanero-io/kabanero-pipelines/blob/master/Troubleshooting.md[Kabanero Pipelines Troubleshooting Guide].
+If you need to troubleshoot, go to the link:https://github.com/kabanero-io/kabanero-pipelines/blob/master/Troubleshooting.md[Kabanero Pipelines Troubleshooting Guide]. This blog was written based on Kabanero Foundation 0.4.0. 
