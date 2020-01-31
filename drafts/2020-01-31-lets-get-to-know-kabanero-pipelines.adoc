@@ -75,7 +75,7 @@ There are three ways to monitor your pipelines:
 
 To check status of your pipelines from an OKD/OpenShift console, log in from the *developer* perspective and click *Pipelines*:
 
-image::/img/blog/kabanero-pipelines.jpg[link="/img/blog/kabanero-pipelines.jpg.jpg" alt="Monitoring your Kabanero Pipelines from "]
+image::/img/blog/kabanero-pipelines.jpg[link="/img/blog/kabanero-pipelines.jpg" alt="Monitoring your Kabanero Pipelines from Tekton Dashboard"]
 
 To check pipeline run status from the Tekton Dashboard, login to the Tekton Dashboard and click *Pipeline runs* in the sidebar menu. Find your pipeline run in the list and click it to check the status and find logs. You can see the logs and status of each step and task.
 
