@@ -2,6 +2,7 @@
 layout: post
 title: "Get to know Pipelines"
 categories: blog
+author: Dewan Ahmed
 author_picture: https://avatars1.githubusercontent.com/u/30604461
 author_github: https://github.com/dewan-ahmed
 seo-title: Get to know Pipelines
