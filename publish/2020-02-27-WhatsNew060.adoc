@@ -29,7 +29,7 @@ Version 0.6.0 completes the support for the activation of multiple versions of t
 
 == Pipelines
 
-Having done the prep work in version 0.5.0 to pull in trigger support for OpenShift Pipelines, we have updated our trigger configuration to show best practice pipeline execution based on GitHub repository events. In addition, we moved up a newer release of triggers, so if you have existing webhooks created in a previous version, you will need to delete them and recreate them.
+Having done the prep work in version 0.5.0 to pull in trigger support for OpenShift Pipelines, we have updated our trigger configuration to show best practice pipeline execution based on GitHub repository events. In addition, we moved to a newer release of triggers, so if you have existing webhooks created in a previous version, you will need to delete them and recreate them.
 
 == Community
 
