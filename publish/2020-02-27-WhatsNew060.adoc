@@ -29,7 +29,7 @@ Version 0.6.0 completes the support for the activation of multiple versions of t
 
 == Pipelines
 
-Having done the prep work in version 0.5.0 to pull in trigger support for OpenShift Pipelines, we have updated our trigger configuration to show best practice pipeline execution based on GitHub repository events.
+Having done the prep work in version 0.5.0 to pull in trigger support for OpenShift Pipelines, we have updated our trigger configuration to show best practice pipeline execution based on GitHub repository events. In addition, we moved up a newer release of triggers, so if you have existing webhooks created in a previous version, you will need to delete them and recreate them.
 
 == Community
 
@@ -58,7 +58,7 @@ As usual, we've updated the foundation components to stay current.
 
 Dependent open source components
 
-[%header,cols=2*] 
+[%header,cols=2*]
 |===
 |Component
 |Version
@@ -78,8 +78,6 @@ Dependent open source components
 
 The community has decided to move away from a Kabanero "branded Che" and towards the CodeReady variant to make the developer experience more consistent with Kabanero and OCP. The version of the CodeReady Workspaces Operator varies depending on OCP release.
 
-*Note*: The update to the OpenShift Pipelines operator introduces a breaking change with update from Triggers 0.1 to Triggers 0.2.1. Delete existing webhooks and reestablish after upgrading to 0.6.0.
-
 == Environments
 
 Kabanero 0.6.0 executes on OCP 4.3.
@@ -88,7 +86,7 @@ Kabanero 0.6.0 executes on OCP 4.3.
 
 The curated stack hub is moved and located here: https://github.com/kabanero-io/kabanero-stack-hub/releases/tag/0.6.0
 
-[%header,cols=2*] 
+[%header,cols=2*]
 |===
 |Stack
 |Version
