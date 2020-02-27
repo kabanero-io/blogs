@@ -31,6 +31,12 @@ Version 0.6.0 completes the support for the activation of multiple versions of t
 
 Having done the prep work in version 0.5.0 to pull in trigger support for OpenShift Pipelines, we have updated our trigger configuration to show best practice pipeline execution based on GitHub repository events. In addition, we moved to a newer release of triggers, so if you have existing webhooks created in a previous version, you will need to delete them and recreate them.
 
+There is a behavior change in the build-deploy-pl pipeline that allows a deploy task (which deploys the application to the cluster) to be conditionally run. In previous releases, all events in the GitHub repo that triggered a pipelinerun using the webhook would trigger both build and deploy tasks.  In this release, events trigger a build task, but only a PR merge triggers a deploy task.
+
+As part of the transition from collections to stacks, we have introduced a release process for the kabanero-pipelines repo.  With pipelines separated into its own release, users can quickly create and update pipelines and associate them with stacks in the Kabanero CR.
+
+You should see significant performance improvement in the nodejs and nodejs-express pipeline run execution times when the pipelines are run against stacks in the new stack hub.
+
 == Community
 
 We've enabled the community GitHub repositories with support for new users to agree to a contribution license -- which protects the community, as well as the contributors.  Just open a PR and GitHub will automatically check if you've agreed, and if you haven't, you will have the opportunity to do so at that time.
