@@ -76,7 +76,7 @@ Dependent open source components
 |0.10.4
 
 |OpenShift Serverless Operator
-|1.3.0
+|1.4.1
 
 |OpenShift ServiceMesh Operator
 |1.0.4
@@ -101,7 +101,7 @@ The curated stack hub is moved and located here: https://github.com/kabanero-io/
 |0.2.2  (new)
 
 |java-spring-boot2
-|0.3.23
+|0.3.24
 
 |nodejs
 |0.3.2
