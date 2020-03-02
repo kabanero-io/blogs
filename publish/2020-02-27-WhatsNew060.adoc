@@ -43,7 +43,7 @@ We've enabled the community GitHub repositories with support for new users to ag
 
 == Unique Experience Console
 
-The console has been enhanced to securely interact with the command line services.  We added the ability to synchronize your stacks with the Kabanero CRD, deactivate stacks, and view the CLI service version via the manage stacks UI.  More updates can be found in the release https://github.com/kabanero-io/kabanero-landing/releases 
+The console has been enhanced to securely interact with the command line services.  We added the ability to synchronize your stacks with the Kabanero CRD, deactivate stacks, and view the CLI service version via the manage stacks UI.  More updates can be found in the release https://github.com/kabanero-io/kabanero-landing/releases
 
 == Security
 
