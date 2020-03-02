@@ -1,0 +1,13 @@
+---
+layout: post
+title: "Update in Japanese (2020/03/02)"
+categories: blog
+author: Yasushi Osonoi
+author_picture: https://avatars.sched.co/e/c9/8724136/avatar.jpg
+author_github: https://github.com/osonoi
+seo-title: kabanero in Japanese
+seo-description: Check out Kabanero in Japanese.
+blog_description: "Kabanero Update in Japanese (2020/03/02)"
+---
+redirect_link: 'https://qiita.com/osonoi/items/01f53e43baa4cd60c579'
+permalink: /blog/redirected.html
