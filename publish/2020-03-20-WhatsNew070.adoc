@@ -33,7 +33,7 @@ The Kabanero operator now allows the specification of pipelines as a single file
 
 == User experience
 
-We've added the CodeReady Workspace tile to the user experience to provide quick links for easy access.
+We've added the CodeReady Workspace tile to the user experience to provide quick links for easy access. We've also added a new admin management feature to help you manage your stack hub admins via the Console UI. For more release information, check out the link:https://github.com/kabanero-io/kabanero-landing/releases/tag/0.7.0[console's 0.7.0 release in GitHub].
 
 == System management CLI and service
 
