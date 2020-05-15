@@ -37,7 +37,7 @@ You can now update a Kabanero CRD instance from the Kabanero console. We've fixe
 
 == Kabanero CLI
 
-In the Kabanero CLI, we've added a new `describe` command that allows you to see more detailed information for a specific stack/version, removed the `onboard developer` command, and added TLS support during login. The CLI now supports Linux P and Z, and we've added back in the ability to pass a password in plaintext when logging in (for scripting purposes).
+In the Kabanero CLI, we've added a new `describe` command that allows you to see more detailed information for a specific stack/version, removed the `kabanero onboard` command, and added TLS support during login. The CLI now supports Linux P and Z, and we've added back in the ability to pass a password in plaintext when logging in (for scripting purposes).
 
 
 == Digest governance policy
