@@ -1,0 +1,113 @@
+---
+layout: post
+title: "What's New in Release 0.9.0"
+categories: blog
+author: Jeff Antley
+author_picture: https://avatars3.githubusercontent.com/u/50876789
+author_github: https://github.com/jantley-ibm
+additional_authors:
+ - name: Stephen Kinder
+   image: https://avatars3.githubusercontent.com/u/50876789
+   github: https://github.com/stephenkinder
+
+seo-title: What is new in release 0.9.0
+seo-description: "Read about changes in Kabanero 0.9.0."
+blog_description: "Read about changes in Kabanero 0.9.0."
+---
+
+We proudly present Kabanero version 0.9.0. There's a lot to tell you about, so let's get right to it.
+
+
+== Events operator with mediator
+
+We've created a new events operator that uses a mediator, requiring only one webhook per organization -- and therefore allowing you to avoid creating individual webhooks for every repository. In addition, the events operator can filter events from application stack repositories based on link:https://kabanero.io/docs/ref/general/reference/semver-governance.html[semantic versioning] to determine which pipeline to trigger. This capability allows you to configure which events target which Kubernetes deployments. A link:https://kabanero.io/guides/integrating-events-operator/[new guide] and link:https://kabanero.io/docs/ref/general/reference/event-operator.html[reference doc] are provided to help you get started.
+
+
+== Pipelines
+
+Pipelines has been updated to support GitOps. Several example pipelines and tasks are provided. A `gitops-map` configmap, provided as a "tech preview" feature, can optionally be configured to promote the service to a GitOps repo after the build. For more information, see the link:https://kabanero.io/guides/working-with-pipelines[Working with pipelines guide]. A link:https://kabanero.io/guides/pipeline-build-deploy-app[new pipelines guide] contains streamlined instructions on how to use a pipeline to build your application, publish the image to a registry, and optionally deploy the application on your cluster.
+
+Note that in moving to Tekton Triggers 0.4 and Pipelines 0.11.1 (i.e., v1alpha1 => v1beta1), the pipeline specs have changed (fields for paramaters and resources were updated for consistency across Tekton CRDs), and there was also an API group change (from tekton.dev to triggers.tekton.dev).
+
+
+== Kabanero console
+
+You can now update a Kabanero CRD instance from the Kabanero console. We've fixed several bugs and made a number of other enhancements and performance improvements.
+
+
+== Kabanero CLI
+
+In the Kabanero CLI, we've added a new `describe` command that allows you to see more detailed information for a specific stack/version, removed the `onboard developer` command, and added TLS support during login. The CLI now supports Linux P and Z, and we've added back in the ability to pass a password in plaintext when logging in (for scripting purposes).
+
+
+== Digest governance policy
+
+We've updated the governance policy to include a new detection point at pre-deploy.
+
+(*) The REST APIs have a limitation for digest retrieval and checks: digest processing is only supported for containers hosted in Docker Hub, to be addressed in a future milestone.
+
+
+== Blocking and Tackling
+
+As usual, we've updated the foundation components to stay current.
+
+Dependent open source components
+
+[%header,cols=2*]
+|===
+|Component
+|Version
+
+|Appsody Operator
+|0.5.1
+
+|OpenShift Pipelines Operator
+|0.11.2 (includes tekton.dev v1beta1 API)
+
+|OpenShift Serverless Operator
+|1.7.0
+
+|OpenShift ServiceMesh Operator
+|1.0.8
+
+|Open Liberty Operator
+|0.5.1
+
+|Tekton Dashboard/Webhook-Extension
+|0.6.1.3 RC
+|===
+
+Remember, the community has moved away from a Kabanero "branded Che" and towards the CodeReady variant to make the developer experience more consistent with Kabanero and OCP. The version of the CodeReady Workspaces Operator varies depending on OCP release.
+
+
+== Environments
+
+Kabanero 0.9.0 executes on OCP 4.4.
+
+
+== Stacks
+
+The curated stack hub is located here: https://github.com/kabanero-io/kabanero-stack-hub/releases/tag/0.9.0
+
+[%header,cols=2*]
+|===
+|Stack
+|Version
+
+|java-openliberty *
+|0.2.11
+
+|java-spring-boot2
+|0.3.29
+
+|nodejs
+|0.3.6
+
+|nodejs-express
+|0.4.8
+
+|java-microprofile
+|(deprecated and removed in favor of the `java-openliberty` stack)
+|===
+
+**Note: The image for `java-openliberty` is now in the `/appsody` folder instead of the `/kabanero` folder. To prevent confusion, review the stack hub yaml file for the appropriate path to use in the `appsody-config.yaml` file.**
