@@ -68,7 +68,7 @@ Dependent open source components
 |1.7.0
 
 |OpenShift ServiceMesh Operator
-|1.0.8
+|1.1.1
 
 |Open Liberty Operator
 |0.5.1
