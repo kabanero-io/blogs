@@ -12,7 +12,7 @@ blog_description: "Development of Kabanero as a standalone project has ended"
 
 Adios, Kabanero.
 
-The kabanero project was created in 2019 to complement the Appsody project. It adds continuous integration and continuous delivery using Tekton pipelines. Now that the development effort in Appsody has ceased, it is time for Kabanero to follow.
+The Kabanero project was created in 2019 to complement the Appsody project. It adds continuous integration and continuous delivery using Tekton pipelines. Now that the development effort in Appsody has ceased, it is time for Kabanero to follow.
 
 The ideas behind Appsody and the development efforts have been combined with odo into odo 2.0. For odo based continuous integration and continuous delivery experience, use Openshift GitOps, which is based on ArgoCD and kam, a command line interface to set up GitOps pipelines.
 
