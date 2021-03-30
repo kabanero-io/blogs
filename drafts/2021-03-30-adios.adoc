@@ -1,0 +1,23 @@
+---
+layout: post
+title: "Development of Kabanero as a standalone project has ended"
+categories: blog
+author: Jeff Antley
+author_picture: https://avatars3.githubusercontent.com/u/50876789
+author_github: https://github.com/jantley-ibm
+seo-title: Development of Kabanero as a standalone project has ended
+seo-description: "Development of Kabanero as a standalone project has ended"
+blog_description: "Development of Kabanero as a standalone project has ended"
+---
+
+Adios, Kabanero.
+
+The Kabanero open source project was started in 2019, with the goal of adding some flavor to the experience of building apps on Kubernetes. We focused on simplifying the task of architecting, developing, deploying, and managing cloud-native apps, using tailored application stacks and tightly integrated tooling that works in harmony with open source.
+
+However, part of the appeal with Kubernetes is the extensive ecosystem which has grown and evolved around it, including projects looking to abstract some of the complexities away from the developer experience. This is always great and exciting to see, but can again add further complexity of choice for those looking to build and deploy applications. Therefore, over the last year we have been working to combine our efforts with the Odo project, merging the technologies from Kabanero with odo to create odo 2.0. Odo 2.0 now provides "a fast, iterative, and straightforward CLI tool for developers who write, build, and deploy applications on Kubernetes and OpenShift".
+
+As such, development of Kabanero as a standalone project is ending, but the mission continues in odo 2.0. Go to https://odo.dev to learn more.
+
+Thank you,
+
+The Kabanero Team
